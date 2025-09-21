@@ -1,0 +1,9 @@
+services:
+  cua-tiem-cuu:
+    build: .
+    container_name: cua_tiem_cuu_website
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html:ro
