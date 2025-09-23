@@ -1,242 +1,287 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>CỬA TIỆM CỪU VUI VẺ</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: url('https://cdn-media.sforum.vn/storage/app/media/ki-tu-dac-biet-dam-may-thumbnail.jpg');
-            background-size: contain;
-            background-color: #000;
-            font-family: Arial, sans-serif;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Web Bán Hàng</title>
+  <style>
+    /* Reset cơ bản */
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {font-family: Calibri, sans-serif; background-color: #f5f5f5; color: #333;}
 
-        .section {
-            background: rgba(0,0,0,0.5);
-            color: #f0f0f0;
-            padding: 20px;
-            margin: 20px auto;
-            border-radius: 10px;
-            max-width: 900px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
 
-        }
+    .navbar h1 {
+      font-size: 24px;
+      flex: 1;
+    }
 
-        hr {
-            border: 1px solid white;
-        }
+    /* Search bar */
+    .search-bar {
+      flex: 1;
+      min-width: 200px;
+      display: flex;
+      gap: 5px;
+    }
 
-        a {
-            color: rgb(105, 174, 140);
-        }
+    .search-bar input {
+      flex: 1;
+      padding: 6px;
+      border-radius: 4px;
+      border: none;
+    }
 
-        .logo {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 3px solid white;
-            display: block;
-            margin: 20px auto 10px;
-        }
-    </style>
+    .search-bar button {
+      padding: 6px 10px;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .search-bar button:hover {
+      background: #222;
+    }
+
+    /* Dropdown */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 6px 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 10px;
+      display: block;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .dropdown-content a:hover {
+      background: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Catalog section */
+    .catalog {padding: 20px;}
+    .catalog h2 {margin-bottom: 20px; text-align: center;}
+
+    .container.popular {
+      display: grid;
+      gap: 15px;
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    /* Card chung */
+    .card {
+      background-color: #fff;
+      border: 2px solid #d3d3d3;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: border-color 0.3s, transform 0.3s;
+      padding: 10px;
+      position: relative;
+    }
+
+    .card:hover {
+      border-color: #32a852;
+      transform: translateY(-3px);
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .card h4 {margin: 10px 0;}
+    .card p {margin: 5px 0; color: #777;}
+
+    .card button {
+      margin-top: 10px;
+      padding: 6px 10px;
+      border: none;
+      background: #4CAF50;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .card button:hover {
+      background: #45a049;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      padding: 20px 10px;
+    }
+
+    footer .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      text-align: center;
+    }
+
+    footer h3 {margin-bottom: 10px;}
+    footer ul {list-style: none;}
+    footer ul li {margin-bottom: 5px;}
+    footer a {color: white; text-decoration: none;}
+    footer a:hover {text-decoration: underline;}
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .navbar {flex-direction: column; align-items: stretch;}
+      .search-bar {width: 100%;}
+      .container.popular {grid-template-columns: 1fr;}
+      footer .footer-grid {grid-template-columns: 1fr;}
+    }
+
+    @media (min-width: 601px) and (max-width: 1023px) {
+      .container.popular {grid-template-columns: repeat(3, 1fr);}
+      footer .footer-grid {grid-template-columns: repeat(3, 1fr);}
+    }
+
+    @media (min-width: 1024px) {
+      .container.popular {grid-template-columns: repeat(5, 1fr);}
+      footer .footer-grid {grid-template-columns: repeat(5, 1fr);}
+    }
+  </style>
 </head>
-    <body>
-        <div class="section">
-            <center>
-                <img src="logo.jpg" alt="Logo" class="logo">
-                <h1><a href = "https://kakaotake.github.io/cua-tiem-cuu/"> 🐑 Cửa Tiệm Cừu Vui Vẻ 🐑 </a></h1>
-                <p><big><i>Nơi mua sắm uy tín cho mọi nhà</i></big></p>
-                <hr width="80%">
-            </center>
-    
-            <center>
-                <p>
-                    <a href="#gioi-thieu">[Giới thiệu]</a> |
-                    <a href="#gian-hang">[Gian hàng]</a> |
-                    <a href="#gio-hang">[Giỏ hàng]</a> |
-                    <a href="#lien-he">[Liên hệ]</a>
-                </p>
-            </center>
-        </div>
+<body>
 
-        <div class="section">
-            <a name="gioi-thieu"></a>
-            <h2>📖 Giới thiệu về gian hàng nhà cừu vui vẻ</h2>
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>Shop Online</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Tìm kiếm sản phẩm...">
+      <button>Tìm</button>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="#">Trang chủ</a>
+        <a href="#">Sản phẩm</a>
+        <a href="#">Liên hệ</a>
+      </div>
+    </div>
+  </div>
 
-            <p><b>Chào mừng quý khách đến với Cửa Tiệm Cừu Vui Vẻ!</b></p>
+  <!-- Catalog -->
+  <section class="catalog">
+    <h2>Danh mục sản phẩm</h2>
+    <div class="container popular">
+      <div class="card">
+        <img src="sanpham1.png" alt="Sản phẩm 1">
+        <h4>Sản phẩm 1</h4>
+        <p>Giá: 100.000đ</p>
+        <button>Mua ngay</button>
+      </div>
+      <div class="card">
+        <img src="sanpham2.png" alt="Sản phẩm 2">
+        <h4>Sản phẩm 2</h4>
+        <p>Giá: 150.000đ</p>
+        <button>Mua ngay</button>
+      </div>
+      <div class="card">
+        <img src="sanpham3.png" alt="Sản phẩm 3">
+        <h4>Sản phẩm 3</h4>
+        <p>Giá: 200.000đ</p>
+        <button>Mua ngay</button>
+      </div>
+      <div class="card">
+        <img src="sanpham4.png" alt="Sản phẩm 4">
+        <h4>Sản phẩm 4</h4>
+        <p>Giá: 250.000đ</p>
+        <button>Mua ngay</button>
+      </div>
+      <div class="card">
+        <img src="sanpham5.png" alt="Sản phẩm 5">
+        <h4>Sản phẩm 5</h4>
+        <p>Giá: 300.000đ</p>
+        <button>Mua ngay</button>
+      </div>
+    </div>
+  </section>
 
-            <p>Chúng tôi tự hào là cửa hàng đa dạng nhất khu vực, cung cấp đầy đủ các mặt hàng thiết yếu cho gia đình bạn. Từ những món đồ văn phòng phẩm cần thiết, đồ gia dụng tiện ích, thời trang cho cả gia đình, mỹ phẩm chất lượng cao đến những món ăn vặt ngon miệng và đồ uống giải khát tươi mát.</p>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>Về chúng tôi</h3>
+        <ul>
+          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Tuyển dụng</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Hỗ trợ</h3>
+        <ul>
+          <li><a href="#">Trung tâm trợ giúp</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Chính sách</h3>
+        <ul>
+          <li><a href="#">Bảo mật</a></li>
+          <li><a href="#">Điều khoản</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Kết nối</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Zalo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Địa chỉ</h3>
+        <ul>
+          <li>Thanh Hóa, Việt Nam</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
-
-            <h3>🏆 Tại sao chọn chúng tôi?</h3>
-            <p>⭐ <b>Chất lượng đảm bảo:</b> Tất cả sản phẩm đều được kiểm tra kỹ lưỡng</p>
-            <p>💰 <b>Giá cả hợp lý:</b> Giá tốt nhất thị trường, nhiều ưu đãi hấp dẫn</p>
-            <p>🚚 <b>Giao hàng nhanh:</b> Giao hàng trong vòng 2-4 giờ trong nội thành</p>
-            <p>🔄 <b>Đổi trả dễ dàng:</b> Chính sách đổi trả linh hoạt trong 7 ngày</p>
-            <p>👨‍💼 <b>Dịch vụ tư vấn:</b> Đội ngũ nhân viên thân thiện, chuyên nghiệp</p>
-
-            <h3>🎯 Sứ mệnh của chúng tôi</h3>
-            <p>Mang đến cho khách hàng những sản phẩm chất lượng tốt nhất với giá cả phải chăng nhất, tạo ra một trải nghiệm mua sắm thuận tiện và thú vị.</p>
-
-        </div>
-        
-            <hr>
-        
-
-        <div class="section">
-            <a name="gian-hang"></a>
-            <h2>🏪 Gian hàng sản phẩm</h2>
-
-            <p><b>danh mục sản phẩm:</b></p>
-
-            <h3>📝 1. Văn phòng phẩm</h3>
-            <p><b>Mô tả:</b> Đầy đủ các loại văn phòng phẩm chất lượng cao</p>
-            <p><b>Sản phẩm nổi bật:</b></p>
-            <p>• Bút bi, bút chì, bút màu các loại</p>
-            <p>• Giấy A4, sổ tay, vở viết</p>
-            <p>• Thước kẻ, compa, máy tính</p>
-            <p>• Keo dán, băng keo, ghim bấm</p>
-            <p>• Bìa hồ sơ, túi đựng tài liệu</p>
-            <p><b>Giá từ:</b> 5k - 500k</p>
-
-            <h3>🏠 2. Đồ gia dụng</h3>
-            <p><b>Mô tả:</b> Thiết bị nhà bếp và đồ dùng gia đình tiện ích</p>
-            <p><b>Sản phẩm nổi bật:</b></p>
-            <p>• Nồi, chảo chống dính cao cấp</p>
-            <p>• Bộ dao thớt inox sắc bén</p>
-            <p>• Bát, đĩa, ly, cốc sứ đẹp</p>
-            <p>• Hộp đựng thực phẩm an toàn</p>
-            <p>• Dụng cụ nấu ăn đa năng</p>
-            <p><b>Giá từ:</b> 20k - 2,000k</p>
-
-            <h3>👗 3. Quần áo nữ</h3>
-            <p><b>Mô tả:</b> Thời trang nữ trendy, từ công sở đến dạo phố</p>
-            <p><b>Sản phẩm nổi bật:</b></p>
-            <p>• Áo sơ mi công sở thanh lịch</p>
-            <p>• Váy đầm dự tiệc sang trọng</p>
-            <p>• Quần jeans, chân váy thời trang</p>
-            <p>• Áo thun, áo khoác trendy</p>
-            <p>• Đồ ngủ, đồ mặc nhà thoải mái</p>
-            <p><b>Giá từ:</b> 99k - 1,500k</p>
-
-            <h3>👕 4. Quần áo nam</h3>
-            <p><b>Mô tả:</b> Thời trang nam lịch sự và năng động</p>
-            <p><b>Sản phẩm nổi bật:</b></p>
-            <p>• Áo sơ mi công sở cao cấp</p>
-            <p>• Áo thun, polo thể thao</p>
-            <p>• Quần kaki, quần jean nam</p>
-            <p>• Áo khoác, vest lịch lãm</p>
-            <p>• Đồ thể thao, đồ mặc nhà</p>
-            <p><b>Giá từ:</b> 120k - 1,800k</p>
-
-            <h3>👶 5. Quần áo trẻ em</h3>
-            <p><b>Mô tả:</b> Thời trang trẻ em an toàn, dễ thương</p>
-            <p><b>Sản phẩm nổi bật:</b></p>
-            <p>• Bộ đồ trẻ em từ 0-12 tuổi</p>
-            <p>• Áo thun họa tiết đáng yêu</p>
-            <p>• Quần short, váy cho bé gái</p>
-            <p>• Đồ ngủ, đồ lót trẻ em</p>
-            <p>• Phụ kiện: mũ, tất, giày dép</p>
-            <p><b>Giá từ:</b> 50k - 800k</p>
-
-            <h3>💄 6. Mỹ phẩm</h3>
-            <p><b>Mô tả:</b> Mỹ phẩm chính hãng cho làn da rạng rỡ</p>
-            <p><b>Sản phẩm nổi bật:</b></p>
-            <p>• Kem dưỡng da mặt, body</p>
-            <p>• Son môi, phấn trang điểm</p>
-            <p>• Nước hoa, xịt thơm cơ thể</p>
-            <p>• Mascara, eyeliner, phấn mắt</p>
-            <p>• Sữa rửa mặt, toner làm sạch</p>
-            <p><b>Giá từ:</b> 75k - 3,000k</p>
-
-            <h3>🍿 7. Đồ ăn vặt</h3>
-            <p><b>Mô tả:</b> Snack ngon, đồ ăn vặt đa dạng vị</p>
-            <p><b>Sản phẩm nổi bật:</b></p>
-            <p>• Bánh quy, crackers giòn tan</p>
-            <p>• Kẹo, chocolate cao cấp</p>
-            <p>• Hạt điều, hạt macca rang</p>
-            <p>• Snack khoai tây, bắp rang</p>
-            <p>• Mứt trái cây, kẹo dẻo</p>
-            <p><b>Giá từ:</b> 15k - 200k</p>
-
-            <h3>🥤 8. Giải khát</h3>
-            <p><b>Mô tả:</b> Đồ uống tươi mát, giải khát hiệu quả</p>
-            <p><b>Sản phẩm nổi bật:</b></p>
-            <p>• Nước ngọt các loại: Coca, Pepsi</p>
-            <p>• Trà sữa, cà phê đóng chai</p>
-            <p>• Nước suối, nước khoáng</p>
-            <p>• Nước trái cây 100% tự nhiên</p>
-            <p>• Năng lượng, thức uống thể thao</p>
-            <p><b>Giá từ:</b> 8k - 150k</p>
-
-            <center>
-            <h3>🔥 KHUYẾN MÃI HOT TUẦN NHẬP HỌC!</h3>
-            <p><b>🎁 Giảm 20% tất cả đồ dùng văn phòng phẩm</b></p>
-            <p><b>🎁 Free ship đơn hàng trên 200k và trong bán kính 7km</b></p>
-            <p><b>🎁 Đồng giá ship 30k cho đơn hàng trên 200k và trong bán kính 7-10km</b></p>
-            </center>
-        </div>
-
-            <hr>
-
-        <div class="section">
-            <a name="gio-hang"></a>
-            <h2>🛒 Giỏ hàng của bạn</h2>
-
-            <p><b>Trạng thái giỏ hàng:</b> Trống</p>
-            <p><b>Số lượng sản phẩm:</b> 0 món</p>
-            <p><b>Tổng tiền tạm tính:</b> 0 VNĐ</p>
-            <p><b>Phí vận chuyển:</b> 0 VNĐ</p>
-            <p><b>Tổng thanh toán:</b> <big><b>0 VNĐ</b></big></p>
-
-            <h3>📋 Chi tiết đơn hàng</h3>
-            <p><i>Giỏ hàng của bạn hiện đang trống. Hãy chọn sản phẩm yêu thích và thêm vào giỏ nhé!</i></p>
-
-            <p><b>Các chức năng:</b></p>
-            <p>🔍 <a href="#gian-hang">Tiếp tục mua sắm</a></p>
-            <p>💳 <a href="#thanh-toan">Tiến hành thanh toán</a></p>
-            <p>🗑️ Xóa tất cả sản phẩm</p>
-            <p>💾 Lưu giỏ hàng</p>
-
-            <h3>💳 Phương thức thanh toán</h3>
-            <p>💵 <b>Tiền mặt:</b> Thanh toán khi nhận hàng (COD)</p>
-            <p>💳 <b>Thẻ ATM:</b> Chuyển khoản ngân hàng</p>
-            <p>📱 <b>Ví điện tử:</b> MoMo, ZaloPay, ViettelPay</p>
-
-        </div>
-            <hr>
-
-        <div class="section">
-            <a name="lien-he"></a>
-            <h2>📞 Thông tin liên hệ</h2>
-
-            <h3>🏢 Thông tin cửa hàng</h3>
-            <p><b>Tên cửa hàng:</b> <a href="https://kakaotake.github.io/cua-tiem-cuu/" target="_blank"> Cửa Tiệm Cừu Vui Vẻ </a></p>
-            <p><b>Địa chỉ:</b> 344 Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
-            <p><b>Email:</b> cuuvuivetiem@gmail.com</p>
-            <p><b>Website:</b> <a href="https://kakaotake.github.io/cua-tiem-cuu/" target="_blank"> https://kakaotake.github.io/cua-tiem-cuu/</a></p>
-
-            <h3>🕒 Giờ hoạt động</h3>
-            <p><b>Thứ 2 - Thứ 6:</b> 8:00 - 22:00</p>
-            <p><b>Thứ 7 - Chủ nhật:</b> 7:00 - 23:00</p>
-            <p><b>Ngày lễ:</b> 9:00 - 21:00</p>
-
-        </div>
-            <hr>
-
-            <marquee>
-            🎉 Chào mừng đến với Cửa Tiệm Cừu Vui Vẻ! Giảm giá lên đến 50% tất cả sản phẩm văn phòng phẩm và chương trình freeship đồng giá! Mua ngay kẻo lỡ! 🐑
-            </marquee>
-
-            </center>
-    </body>
+</body>
 </html>
-
-
-
-
-
-
