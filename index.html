@@ -602,6 +602,9 @@
                 gap: 12px;
                 justify-content: center;
             }
+            .popular-header {
+                grid-column: 1 / -1;
+            }
             .popular-card {
                 border: 2px solid white;
                 border-radius: 10px;
@@ -647,6 +650,9 @@
                 grid-template-columns: repeat(5, 180px);
                 gap: 16px;
                 justify-content: center;
+            }
+            .deals-header {
+                grid-column: 1 / -1;
             }
             .product-card {
                 position: relative;
@@ -728,10 +734,10 @@
             /*--------Show More----------*/
             .show-more {
                 display: block;
-                width: 65%;
+                width: 64%;
                 margin: 20px auto 40px;
                 padding: 12px 0;
-                margin: 0 auto 40px;
+                margin: 20 auto 40px;
                 background-color: #b9bcbb;
                 color: black;
                 text-align: center;
@@ -764,6 +770,7 @@
                 gap: 18px;
                 max-width: 1200px;
                 margin: 0 auto;
+                justify-content: center;
             }
             .footer-column h6 {
                 font-weight: 700;
@@ -938,7 +945,7 @@
 
         <!---------Product Catalog-------->
         <section class="catalog-circles" aria-label="Product categories">
-            <header style="text-align: center; margin-bottom: 25px;">
+            <header class="popular-header" style="text-align: center; margin-bottom: 25px;">
                 <h2>Product Catalog</h2>
             </header>
             <div class="catalog-row">
@@ -981,69 +988,70 @@
 
         <!---------Most popular categories-------->
         <section class="popular-section" aria-label="Most popular categories">
-            <header style="margin-bottom: 25px;">
-                <h2>Most Popular Categories</h2>
-            </header>
-            <div class="popular-grid">
-            <article class="popular-card">
-            <img src="access/sanpham1.png" alt="Popular 1">
-            <p>Category A</p>
-            </article>
+            <div class="deals-grid">
+                <header class="deals-header" style="margin-bottom: 25px;">
+                    <h2>Most Popular Categories</h2>
+                </header>
 
-            <article class="popular-card">
-            <img src="access/sanpham2.png" alt="Popular 2">
-            <p>Category B</p>
-            </article>
+                <article class="popular-card">
+                <img src="access/sanpham1.png" alt="Popular 1">
+                <p>Category A</p>
+                </article>
 
-            <article class="popular-card">
-            <img src="access/sanpham3.png" alt="Popular 3">
-            <p>Category C</p>
-            </article>
+                <article class="popular-card">
+                <img src="access/sanpham2.png" alt="Popular 2">
+                <p>Category B</p>
+                </article>
 
-            <article class="popular-card">
-            <img src="access/sanpham4.png" alt="Popular 4">
-            <p>Category D</p>
-            </article>
+                <article class="popular-card">
+                <img src="access/sanpham3.png" alt="Popular 3">
+                <p>Category C</p>
+                </article>
 
-            <article class="popular-card">
-            <img src="access/sanpham5.png" alt="Popular 5">
-            <p>Category D</p>
-            </article>
+                <article class="popular-card">
+                <img src="access/sanpham4.png" alt="Popular 4">
+                <p>Category D</p>
+                </article>
 
-            <article class="popular-card">
-            <img src="access/sanpham6.png" alt="Popular 6">
-            <p>Category D</p>
-            </article>
+                <article class="popular-card">
+                <img src="access/sanpham5.png" alt="Popular 5">
+                <p>Category D</p>
+                </article>
 
-            <article class="popular-card">
-            <img src="access/sanpham7.png" alt="Popular 7">
-            <p>Category D</p>
-            </article>
+                <article class="popular-card">
+                <img src="access/sanpham6.png" alt="Popular 6">
+                <p>Category D</p>
+                </article>
 
-            <article class="popular-card">
-            <img src="access/sanpham8.png" alt="Popular 8">
-            <p>Category D</p>
-            </article>
+                <article class="popular-card">
+                <img src="access/sanpham7.png" alt="Popular 7">
+                <p>Category D</p>
+                </article>
 
-            <article class="popular-card">
-            <img src="access/sanpham9.png" alt="Popular 9">
-            <p>Category D</p>
-            </article>
+                <article class="popular-card">
+                <img src="access/sanpham8.png" alt="Popular 8">
+                <p>Category D</p>
+                </article>
 
-            <article class="popular-card">
-            <img src="access/sanpham10.png" alt="Popular 10">
-            <p>Category D</p>
-            </article>
-        </div>
+                <article class="popular-card">
+                <img src="access/sanpham9.png" alt="Popular 9">
+                <p>Category D</p>
+                </article>
+
+                <article class="popular-card">
+                <img src="access/sanpham10.png" alt="Popular 10">
+                <p>Category D</p>
+                </article>
+            </div>
         </section>
 
         <!---------Today's big deals-------->
         <section class="todays-deals" aria-label="Today's big deals">
-            <header>
-                <h2>Today's big deals</h2>
-            </header>
-
             <div class="deals-grid">
+                <header>
+                    <h2>Today's big deals</h2>
+                </header>
+
                 <div class="product-card">
                 <img src="access/sanpham1.png" alt="Coffee and Tea Cup with Plate">
                 <button class="product-heart" aria-label="Add to wishlist">♥</button>
