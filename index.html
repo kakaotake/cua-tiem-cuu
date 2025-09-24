@@ -600,7 +600,7 @@
                 display: grid;
                 grid-template-columns: repeat(5, 180px);
                 gap: 12px;
-                align-items: start;
+                justify-content: center;
             }
             .popular-card {
                 border: 2px solid white;
@@ -646,6 +646,7 @@
                 display: grid;
                 grid-template-columns: repeat(5, 180px);
                 gap: 16px;
+                justify-content: center;
             }
             .product-card {
                 position: relative;
@@ -814,22 +815,16 @@
                     grid-template-columns: repeat(3, 1fr);
                 }
                 .popular-grid {
-                    grid-template-columns: repeat(3, 180px);
+                    grid-template-columns: repeat(2, 180px);
                 }
                 .deals-grid {
-                    grid-template-columns: repeat(3, 180px);
+                    grid-template-columns: repeat(2, 180px);
                 }
             }
 
             @media (max-width: 480px) {
                 .footer-grid {
                     grid-template-columns: repeat(2, 1fr);
-                }
-                .popular-grid {
-                    grid-template-columns: repeat(2, 180px);
-                }
-                .deals-grid {
-                    grid-template-columns: repeat(2, 180px);
                 }
             }
 
@@ -987,7 +982,7 @@
         <!---------Most popular categories-------->
         <section class="popular-section" aria-label="Most popular categories">
             <header style="margin-bottom: 25px;">
-                <h2>Product Catalog</h2>
+                <h2>Most Popular Categories</h2>
             </header>
             <div class="popular-grid">
             <article class="popular-card">
