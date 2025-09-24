@@ -596,7 +596,7 @@
             }
             .popular-grid {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                grid-template-columns: repeat(5, minmax(150px, 1fr));
                 gap: 12px;
                 align-items: start;
             }
@@ -640,7 +640,7 @@
             }
             .deals-grid {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                grid-template-columns: repeat(5, minmax(180px, 1fr));
                 gap: 16px;
             }
             .product-card {
@@ -723,7 +723,7 @@
             /*--------Show More----------*/
             .show-more {
                 display: block;
-                width: 90%;
+                width: 65%;
                 margin: 5px auto 40px;
                 padding: 12px 0;
                 margin: 0 auto 40px;
@@ -797,17 +797,35 @@
                 .footer-grid {
                     grid-template-columns: repeat(4, 1fr);
                 }
+                .popular-grid {
+                    grid-template-columns: repeat(4, minmax(150px, 1fr));
+                }
+                .deals-grid {
+                    grid-template-columns: repeat(4, minmax(180px, 1fr));
+                }
             }
 
             @media (max-width: 600px) {
                 .footer-grid {
                     grid-template-columns: repeat(3, 1fr);
                 }
+                .popular-grid {
+                    grid-template-columns: repeat(3, minmax(150px, 1fr));
+                }
+                .deals-grid {
+                    grid-template-columns: repeat(3, minmax(180px, 1fr));
+                }
             }
 
             @media (max-width: 480px) {
                 .footer-grid {
                     grid-template-columns: repeat(2, 1fr);
+                }
+                .popular-grid {
+                    grid-template-columns: repeat(2, minmax(150px, 1fr));
+                }
+                .deals-grid {
+                    grid-template-columns: repeat(2, minmax(180px, 1fr));
                 }
             }
 
@@ -921,7 +939,9 @@
 
         <!---------Product Catalog-------->
         <section class="catalog-circles" aria-label="Product categories">
-            <h2 class="section-title">Product Catalog</h2>
+            <header style="text-align: center;">
+                <h2>Product Catalog</h2>
+            </header>
             <div class="catalog-row">
                 <a class="catalog-item" href="#">
                     <img src="access/thoitrang.jpg" alt="Fashion" />
