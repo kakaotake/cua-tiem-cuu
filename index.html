@@ -156,13 +156,17 @@
                 align-items: center;
                 justify-content: space-between;
                 flex-wrap: wrap;
-                padding: 0 20px;
+                padding: 10px 20px;
             }
-            .header-left, .header-right {
+            .header-left {
                 display: flex;
                 align-items: center;
                 gap: 20px;
-                min-width: 100px;
+            }
+            .header-right {
+                display: flex;
+                align-items: center;
+                gap: 10px;
             }
             .header-center {
                 flex: 1;
@@ -345,7 +349,7 @@
                 min-width: 150px;
             }
             .search-button {
-                width: 32x;
+                width: 32px;
                 height: 32px;
                 border-radius: 50%;
                 border: none;
@@ -387,7 +391,7 @@
                 color: #000;
                 text-decoration: none;
                 font-weight: 700;
-                border: 2px bolid var(--blue-300);
+                border: 2px solid var(--blue-300);
                 font-family: var(--font-family);
             }
             .sign-in-button:hover,
@@ -579,7 +583,7 @@
             }
             .catalog-item p {
                 margin-top: 8px;
-                font-style: 0.95rem;
+                font-size: 0.95rem;
                 color: black;
             }
 
@@ -614,12 +618,14 @@
             }
             .popular-card:hover img {
                 transform: scale(1.05);
+                cursor: pointer;;
             }
             .popular-card p {
                 padding: 8px;
                 color: black;
                 font-weight: 400;
             }
+            
             /* ---------Today's big deals-------- */
             .todays-deals {
                 padding: 20px;
@@ -651,27 +657,43 @@
                 object-fit: cover;
                 display: block;
             }
-            .product-heart {
-                display: none;
+            .product-card .product-heart {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 position: absolute;
                 top: 8px;
                 right: 8px;
                 width: 36px;
                 height: 36px;
                 border-radius: 50%;
-                border: none;
-                background: none;
-                cursor: pointer;
+                border: 2px solid transparent;
+                background: transparent;
+                color: transparent;
                 font-size: 20px;
                 line-height: 36px;
                 text-align: center;
-                transition: background 0.15s, transform 0.12s;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                pointer-events: none;
             }
-            .product-heart:hover,
-            .product-heart:focus {
-                background: none;
+            .product-card:hover .product-heart {
                 color: var(--blue-600);
-                transform: scale(1.08);
+                background-color: transparent;
+                border-color: var(--blue-600);
+                transform: scale(1.1);
+                opacity: 1;
+            }
+            .product-card .product-heart {
+                transition: all 0.2s ease;
+            }
+
+            .product-card:not(:hover) .product-heart {
+                color: var(--blue-600);
+                background-color: transparent;
+                border-color: var(--blue-600);
+                transform: scale(0.9);
+                opacity: 0;
             }
             .product-info {
                 padding: 8px;
@@ -695,6 +717,32 @@
             .product-card:hover {
                 border-color: var(--blue-600);
                 transform: translateY(-4px);
+            }
+
+            /*--------Show More----------*/
+            .show-more {
+                display: block;
+                width: fit-content;
+                margin: 5px auto 40px;
+                min-width: 100%;
+                max-width: 100%;
+                padding: 12px 0;
+                margin: 0 auto 40px;
+                background-color: #b9bcbb;
+                color: black;
+                text-align: center;
+                border-radius: var(--border-radius-base);
+                font-weight: bold;
+                font-size: 16px;
+                font-family: var(--font-family);
+                cursor: pointer;
+            }
+
+
+
+            .show-more:hover {
+                background-color: var(--blue-600); 
+                color: white;
             }
 
             /* ---------Video Reviews-------- */
@@ -800,7 +848,7 @@
                         </svg>
                     </button>
                 </form>
-            </header>
+            </div>
 
             <div class="header-right">
                 <!---------Sign in-------->
@@ -903,6 +951,7 @@
                 </a>
             </div>
         </section>
+
         <!---------Most popular categories-------->
         <section class="popular-section" aria-label="Most popular categories">
             <h2 class="section-title">Most Popular Products</h2>
@@ -961,112 +1010,117 @@
 
         <!---------Today's big deals-------->
         <section class="todays-deals" aria-label="Today's big deals">
-        <header>
-            <h2>Today's big deals</h2>
-        </header>
+            <header>
+                <h2>Today's big deals</h2>
+            </header>
 
-        <div class="deals-grid">
-            <div class="product-card">
-            <img src="access/sanpham1.png" alt="Coffee and Tea Cup with Plate">
-            <button class="product-heart" aria-label="Add to wishlist">♥</button>
-            <div class="product-info">
-                <p class="product-name">Coffee and Tea Cup with Plate</p>
-                <p class="product-price">$50.00</p>
-                <p class="product-badge">freeship</p>
-            </div>
-            </div>
+            <div class="deals-grid">
+                <div class="product-card">
+                <img src="access/sanpham1.png" alt="Coffee and Tea Cup with Plate">
+                <button class="product-heart" aria-label="Add to wishlist">♥</button>
+                <div class="product-info">
+                    <p class="product-name">Coffee and Tea Cup with Plate</p>
+                    <p class="product-price">$50.00</p>
+                    <p class="product-badge">freeship</p>
+                </div>
+                </div>
 
-            <div class="product-card">
-            <img src="access/sanpham2.png" alt="Product 2">
-            <button class="product-heart" aria-label="Add to wishlist">♥</button>
-            <div class="product-info">
-                <p class="product-name">Name of the product</p>
-                <p class="product-price">$60.00</p>
-                <p class="product-badge">freeship</p>
-            </div>
-            </div>
+                <div class="product-card">
+                <img src="access/sanpham2.png" alt="Product 2">
+                <button class="product-heart" aria-label="Add to wishlist">♥</button>
+                <div class="product-info">
+                    <p class="product-name">Name of the product</p>
+                    <p class="product-price">$60.00</p>
+                    <p class="product-badge">freeship</p>
+                </div>
+                </div>
 
-            <div class="product-card">
-            <img src="access/sanpham3.png" alt="Product 3">
-            <button class="product-heart" aria-label="Add to wishlist">♥</button>
-            <div class="product-info">
-                <p class="product-name">Name of the product</p>
-                <p class="product-price">$79.00</p>
-                <p class="product-badge">freeship</p>
-            </div>
-            </div>
+                <div class="product-card">
+                <img src="access/sanpham3.png" alt="Product 3">
+                <button class="product-heart" aria-label="Add to wishlist">♥</button>
+                <div class="product-info">
+                    <p class="product-name">Name of the product</p>
+                    <p class="product-price">$79.00</p>
+                    <p class="product-badge">freeship</p>
+                </div>
+                </div>
 
-            <div class="product-card">
-            <img src="access/sanpham4.png" alt="Product 4">
-            <button class="product-heart" aria-label="Add to wishlist">♥</button>
-            <div class="product-info">
-                <p class="product-name">Name of the product</p>
-                <p class="product-price">$63.00</p>
-                <p class="product-badge">freeship</p>
-            </div>
-            </div>
+                <div class="product-card">
+                <img src="access/sanpham4.png" alt="Product 4">
+                <button class="product-heart" aria-label="Add to wishlist">♥</button>
+                <div class="product-info">
+                    <p class="product-name">Name of the product</p>
+                    <p class="product-price">$63.00</p>
+                    <p class="product-badge">freeship</p>
+                </div>
+                </div>
 
-            <div class="product-card">
-            <img src="access/sanpham5.png" alt="Product 5">
-            <button class="product-heart" aria-label="Add to wishlist">♥</button>
-            <div class="product-info">
-                <p class="product-name">Name of the product</p>
-                <p class="product-price">$63.00</p>
-                <p class="product-badge">freeship</p>
-            </div>
-            </div>
+                <div class="product-card">
+                <img src="access/sanpham5.png" alt="Product 5">
+                <button class="product-heart" aria-label="Add to wishlist">♥</button>
+                <div class="product-info">
+                    <p class="product-name">Name of the product</p>
+                    <p class="product-price">$63.00</p>
+                    <p class="product-badge">freeship</p>
+                </div>
+                </div>
 
-            <div class="product-card">
-            <img src="access/sanpham6.png" alt="Product 6">
-            <button class="product-heart" aria-label="Add to wishlist">♥</button>
-            <div class="product-info">
-                <p class="product-name">Name of the product</p>
-                <p class="product-price">$63.00</p>
-                <p class="product-badge">freeship</p>
-            </div>
-            </div>
+                <div class="product-card">
+                <img src="access/sanpham6.png" alt="Product 6">
+                <button class="product-heart" aria-label="Add to wishlist">♥</button>
+                <div class="product-info">
+                    <p class="product-name">Name of the product</p>
+                    <p class="product-price">$63.00</p>
+                    <p class="product-badge">freeship</p>
+                </div>
+                </div>
 
-            <div class="product-card">
-            <img src="access/sanpham7.png" alt="Product 7">
-            <button class="product-heart" aria-label="Add to wishlist">♥</button>
-            <div class="product-info">
-                <p class="product-name">Name of the product</p>
-                <p class="product-price">$63.00</p>
-                <p class="product-badge">freeship</p>
-            </div>
-            </div>
+                <div class="product-card">
+                <img src="access/sanpham7.png" alt="Product 7">
+                <button class="product-heart" aria-label="Add to wishlist">♥</button>
+                <div class="product-info">
+                    <p class="product-name">Name of the product</p>
+                    <p class="product-price">$63.00</p>
+                    <p class="product-badge">freeship</p>
+                </div>
+                </div>
 
-            <div class="product-card">
-            <img src="access/sanpham8.png" alt="Product 8">
-            <button class="product-heart" aria-label="Add to wishlist">♥</button>
-            <div class="product-info">
-                <p class="product-name">Name of the product</p>
-                <p class="product-price">$63.00</p>
-                <p class="product-badge">freeship</p>
-            </div>
-            </div>
+                <div class="product-card">
+                <img src="access/sanpham8.png" alt="Product 8">
+                <button class="product-heart" aria-label="Add to wishlist">♥</button>
+                <div class="product-info">
+                    <p class="product-name">Name of the product</p>
+                    <p class="product-price">$63.00</p>
+                    <p class="product-badge">freeship</p>
+                </div>
+                </div>
 
-            <div class="product-card">
-            <img src="access/sanpham9.png" alt="Product 9">
-            <button class="product-heart" aria-label="Add to wishlist">♥</button>
-            <div class="product-info">
-                <p class="product-name">Name of the product</p>
-                <p class="product-price">$63.00</p>
-                <p class="product-badge">freeship</p>
-            </div>
-            </div>
+                <div class="product-card">
+                <img src="access/sanpham9.png" alt="Product 9">
+                <button class="product-heart" aria-label="Add to wishlist">♥</button>
+                <div class="product-info">
+                    <p class="product-name">Name of the product</p>
+                    <p class="product-price">$63.00</p>
+                    <p class="product-badge">freeship</p>
+                </div>
+                </div>
 
-            <div class="product-card">
-            <img src="access/sanpham10.png" alt="Product 10">
-            <button class="product-heart" aria-label="Add to wishlist">♥</button>
-            <div class="product-info">
-                <p class="product-name">Name of the product</p>
-                <p class="product-price">$63.00</p>
-                <p class="product-badge">freeship</p>
+                <div class="product-card">
+                <img src="access/sanpham10.png" alt="Product 10">
+                <button class="product-heart" aria-label="Add to wishlist">♥</button>
+                <div class="product-info">
+                    <p class="product-name">Name of the product</p>
+                    <p class="product-price">$63.00</p>
+                    <p class="product-badge">freeship</p>
+                </div>
+                </div>
             </div>
-            </div>
-        </div>
         </section>
+
+        <!---Show More-->
+        <div class="show-more">
+            Show More Products
+        </div>
 
         <!---------Video Reviews-------->
 
