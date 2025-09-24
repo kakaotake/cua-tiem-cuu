@@ -1,420 +1,1105 @@
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Ecommerce templates for your next project">
-	<meta name="author" content="Ecommerce-ui.com">
+<!DOCTYPE html>
+<html lang = "vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta name="description" content="The largest e-commerce site in Vietnam">
+        <title>Website layout</title>
+        <style>
+            :root {
+                /*color*/
+                --neutral-0: #fff;
+                --neutral-50: #f8fafc;
+                --neutral-100: #f1f5f9;
+                --neutral-200: #e2e8f0;
+                --neutral-300: #cbd5e1;
+                --neutral-400: #A3B0C2;
+                --neutral-500: #6B7C94;
+                --neutral-600: #52637A;
+                --neutral-700: #334155;
+                --neutral-800: #1e293b;
+                --neutral-900: #0f172a;
+                --neutral-1000: #000;
+                --primary-100: #e0e7ff;
+                --primary-200: #c7d2fe;
+                --primary-300: #a5b4fc;
+                --primary-400: #818cf8;
+                --primary-500: #6163fe;
+                --primary-600: #4f46e5;
+                --primary-700: #4338ca;
+                --primary-800: #3730a3;
+                --primary-900: #312e81;
+                --blue-100: #dbeafe;
+                --blue-200: #bfdbfe;
+                --blue-300: #93c5fd;
+                --blue-400: #60a5fa;
+                --blue-500: #3780f6;
+                --blue-600: #2563eb;
+                --blue-700: #1d4ed8;
+                --blue-800: #1e40af;
+                --blue-900: #112a6e;
+                --red-100: #fee2e2;
+                --red-200: #fecaca;
+                --red-300: #fca5a5;
+                --red-400: #f87171;
+                --red-500: #ef3232;
+                --red-600: #d11616;
+                --red-700: #b91c1c;
+                --red-800: #991b1b;
+                --red-900: #671010;
+                --green-100: #DBFFE1;
+                --green-200: #bbf7d0;
+                --green-300: #86efac;
+                --green-400: #4ade80;
+                --green-500: #0dab47;
+                --green-600: #0d923e;
+                --green-700: #15803d;
+                --green-800: #166534;
+                --green-900: #0a4321;
+                --orange-100: #ffedd5;
+                --orange-200: #fed7aa;
+                --orange-300: #fdba74;
+                --orange-400: #fb923c;
+                --orange-500: #f97316;
+                --orange-600: #d14f09;
+                --orange-700: #b13606;
+                --orange-800: #87290a;
+                --orange-900: #5e1a04;
+                --yellow-100: #fff6a5;
+                --yellow-200: #ffed4a;
+                --yellow-300: #ffe11e;
+                --yellow-400: #fed507;
+                --yellow-500: #E5B800;
+                --yellow-600: #D6A400;
+                --yellow-700: #B88700;
+                --yellow-800: #996B00;
+                --yellow-900: #855800;
+                --purple-100: #f3e8ff;
+                --purple-200: #e9d5ff;
+                --purple-300: #d8b4fe;
+                --purple-400: #c084fc;
+                --purple-500: #a855f7;
+                --purple-600: #9333ea;
+                --purple-700: #7e22ce;
+                --purple-800: #6b21a8;
+                --purple-900: #3f0b68;
+                --teal-100: #ccfbf1;
+                --teal-200: #99f6e4;
+                --teal-300: #5eead4;
+                --teal-400: #2dd4bf;
+                --teal-500: #14b8a6;
+                --teal-600: #0d9488;
+                --teal-700: #0f766e;
+                --teal-800: #115e59;
+                --teal-900: #0c4844;
+                --alpha-1: rgba(0,20,60,.06);
+                --alpha-2: rgba(0,20,60,.10);
+                --alpha-3: rgba(0,20,60,.15);
+                --alpha-4: rgba(0,20,60,.2);
+                --alpha-5: rgba(0,20,60,.3);
+                --alpha-6: rgba(0,20,60,.4);
+                --alpha-7: rgba(0,20,60,.5);
+                --alpha-8: rgba(0,20,60,.6);
+                --alpha-9: rgba(0,20,60,.7);
+        
+                /*color main*/
+                --main-color: #226480;
+                --font-family: Calibri, sans-serif;
+                --bg-color-base: #fff;
+                --bg-color-secondary: var(--blue-200);
+                --border-color-default: var(--blue-300);
+                --text-link-color: var(--blue-600);
+                --text-color-base: #000;
+                --text-color-secondary: var(--neutral-500);
+                --text-color-muted: var(--neutral-400);
 
-	<title>Website layout sample </title>
+                /*boder-radius*/
+                --border-radius-base: 8px;
+                --border-radius-sm: 4px;
+                --border-radius-lg: 12px;
+                --border-radius-xl: 16px;
 
-	<link href="css/final.css" rel="stylesheet" type="text/css" />
+                /*font text and size*/
+                --font-family-base: system-ui, -apple-system, "Helvetica Neue", "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                --font-size-default: 15px;
+                --font-size-sm: 0.9rem;
+                --line-height-base: 1.4;
+                --line-height-sm: 1.25;
+                --line-height-lg: 1.8;
+            }
 
-    <script src="script.js"></script>
-    
-</head>
-<body>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
 
-<header class="border-bottom">
-    <section>
-        <div class="container max-sm:px-">
-            <div class="d-flex max-sm:flex-wrap py-4  gap-2 align-items-center justify-content-between">
-                <div class="d-flex align-items-center mr-4">
-                    <button class="btn btn-default btn-icon mr-2 sm:d-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none">
-                            <path d="M4 5L20 5" stroke="currentColor" stroke-width="2"></path>
-                            <path d="M4 12L20 12" stroke="currentColor" stroke-width="2"></path>
-                            <path d="M4 19L20 19" stroke="currentColor" stroke-width="2"></path>
-                        </svg>
-                    </button>
-                    <a href="https://ecommerce-ui.com" class="d-block flex-shrink-0 hover:opacity-80 d-flex text-decoration-none align-items-center m-0">
-                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g filter="url(#filter0_i_4450_795)">
-                                <path d="M28 0H8C3.58172 0 0 3.58172 0 8V28C0 32.4183 3.58172 36 8 36H28C32.4183 36 36 32.4183 36 28V8C36 3.58172 32.4183 0 28 0Z" fill="var(--primary-500)"></path>
-                            </g>
-                            <defs>
-                                <filter id="filter0_i_4450_795" x="0" y="-4" width="36" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
-                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-                                    <feOffset dy="-4"></feOffset>
-                                    <feGaussianBlur stdDeviation="2"></feGaussianBlur>
-                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
-                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_4450_795"></feBlend>
-                                </filter>
-                            </defs>
-                        </svg>
-                    </a>
-                </div>
-                <div class="header-search-wrap d-none d-lg-block">
-                    <form action="#" class="search">
-                        <div class="input-group">
-                            <input type="search" class="form-control" style="width:50%" placeholder="I'm looking for..." />
-                            <select class="form-select flex-grow-0 flex-shrink-0" style="width:140px">
-                                <option value="">All category</option>
-                                <option value="">Electronics </option>
-                                <option value="">Mobile</option>
-                                <option value="">Clothes</option>
-                            </select>
-                            <button class="btn btn-primary">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#fff" fill="none">
-                                    <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    <path d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                    <a href="https://ecommerce-ui.com/page-profile.html" class="btn btn-light btn-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.9999 12.0001C14.209 12.0001 15.9999 10.2092 15.9999 8.00011C15.9999 5.79105 14.209 4.00011 11.9999 4.00011C9.79075 4.00011 7.99982 5.79105 7.99982 8.00011C7.99982 10.2092 9.79075 12.0001 11.9999 12.0001Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M4.24976 19.4999C4.24976 16.5001 7.74976 14 11.9998 14C16.2498 14 19.7498 16.5001 19.7498 19.4999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </a>
-                    <a href="https://ecommerce-ui.com/page-wishlist.html" class="btn btn-light btn-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.232 5.068C17.072 4.01353 15.5451 3.49122 13.9877 3.51347C12.4303 3.53572 10.9168 4.3013 9.80587 5.5186C9.52552 5.82422 9.25557 6.16016 9.00004 6.52002C8.74452 6.16016 8.47457 5.82422 8.19422 5.5186C7.08329 4.3013 5.56976 3.53572 4.01235 3.51347C2.45494 3.49122 0.928066 4.01353 -0.232 5.068C-1.392 6.12247 -1.97541 7.64166 -1.82855 9.17242C-1.68169 10.7032 -0.871131 12.1192 0.297423 13.1902L9.00004 22.0001L17.7027 13.1902C18.8712 12.1192 19.6818 10.7032 19.8286 9.17242C19.9754 7.64166 19.392 6.12247 18.232 5.068V5.068Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </a>
-                    <a href="https://ecommerce-ui.com/page-shopping-cart.html" class="btn btn-light btn-icon btn-cart">
-                        <span class="badge rounded-full bg-primary-600">3</span>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3.52843 3.47353C4.08636 3.01344 4.80512 2.76662 5.55648 2.75001H18.4435C19.1949 2.76662 19.9136 3.01344 20.4716 3.47353C21.0295 3.93363 21.4939 4.58249 21.8021 5.34293C22.1104 6.10338 22.2536 6.94639 22.2227 7.79469V15.0001C22.2227 16.5914 21.4646 18.1189 20.1065 19.1678C18.7484 20.2166 16.9298 20.6729 15.2014 20.443L9.63588 19.6644C8.42106 19.4934 7.28821 18.9959 6.36866 18.2281C5.4491 17.4602 4.77383 16.452 4.41737 15.2972C4.06091 14.1424 4.03264 12.8906 4.33534 11.7226C4.63804 10.5546 5.26388 9.51954 6.1415 8.74052L7.99982 7.00011" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </a>
-                    <a href="https://ecommerce-ui.com/page-shopping-cart.html" class="btn btn-primary">
-                        <span class="d-none d-lg-inline-block">Cart</span> 
-                        <svg class="d-lg-none" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3.52843 3.47353C4.08636 3.01344 4.80512 2.76662 5.55648 2.75001H18.4435C19.1949 2.76662 19.9136 3.01344 20.4716 3.47353C21.0295 3.93363 21.4939 4.58249 21.8021 5.34293C22.1104 6.10338 22.2536 6.94639 22.2227 7.79469V15.0001C22.2227 16.5914 21.4646 18.1189 20.1065 19.1678C18.7484 20.2166 16.9298 20.6729 15.2014 20.443L9.63588 19.6644C8.42106 19.4934 7.28821 18.9959 6.36866 18.2281C5.4491 17.4602 4.77383 16.452 4.41737 15.2972C4.06091 14.1424 4.03264 12.8906 4.33534 11.7226C4.63804 10.5546 5.26388 9.51954 6.1415 8.74052L7.99982 7.00011" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </a>
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-</header>
-<main class="main-wrap">
-    <div class="bg-light pt-3">
-        <div class="container max-sm:px-">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">All products</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-    <section class="section-hero">
-        <div class="container max-sm:px-">
-            <div class="d-flex align-items-center flex-wrap p-4 text-center rounded-2xl bg-primary-100 position-relative" style="background-image: url('https://ecommerce-ui.com/images/banner/cover1.jpg'); background-size: cover; background-position: center; min-height: 250px;">
-                <div class="col-lg-6 col-12">
-                    <div class="text-white">
-                        <h1 class="display-5 font-bold">New collection is here!</h1>
-                        <p class="lead">Check out our new products and offers</p>
-                        <a href="#" class="btn btn-light">Shop now</a>
-                    </div>
-                </div>
-                </div>
-        </div>
-    </section>
-    <section class="section-categories">
-        <div class="container max-sm:px- py-10">
-            <h2 class="h5 mb-4">Product categories</h2>
-            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3">
-                <div class="col">
-                    <a href="#" class="d-block text-center text-decoration-none bg-light rounded-xl overflow-hidden hover:scale-105 transition">
-                        <img src="https://ecommerce-ui.com/images/icons/shirt-icon.svg" height="120" class="img-fluid" alt="">
-                        <p class="mt-2 mb-2">Clothing</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#" class="d-block text-center text-decoration-none bg-light rounded-xl overflow-hidden hover:scale-105 transition">
-                        <img src="https://ecommerce-ui.com/images/icons/game-icon.svg" height="120" class="img-fluid" alt="">
-                        <p class="mt-2 mb-2">Gaming</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#" class="d-block text-center text-decoration-none bg-light rounded-xl overflow-hidden hover:scale-105 transition">
-                        <img src="https://ecommerce-ui.com/images/icons/gadget-icon.svg" height="120" class="img-fluid" alt="">
-                        <p class="mt-2 mb-2">Gadgets</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#" class="d-block text-center text-decoration-none bg-light rounded-xl overflow-hidden hover:scale-105 transition">
-                        <img src="https://ecommerce-ui.com/images/icons/camera-icon.svg" height="120" class="img-fluid" alt="">
-                        <p class="mt-2 mb-2">Electronics</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#" class="d-block text-center text-decoration-none bg-light rounded-xl overflow-hidden hover:scale-105 transition">
-                        <img src="https://ecommerce-ui.com/images/icons/book-icon.svg" height="120" class="img-fluid" alt="">
-                        <p class="mt-2 mb-2">Books</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#" class="d-block text-center text-decoration-none bg-light rounded-xl overflow-hidden hover:scale-105 transition">
-                        <img src="https://ecommerce-ui.com/images/icons/gift-icon.svg" height="120" class="img-fluid" alt="">
-                        <p class="mt-2 mb-2">Gift</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section-product-lists">
-        <div class="container max-sm:px- py-10">
-            <h2 class="h5 mb-4">New products</h2>
-            <div class="row g-4">
-                <div class="col-md-3 col-sm-6 col-12">
-                    <figure class="card">
-                        <div class="img-wrap">
-                            <a href="#" class="d-block">
-                                <img src="https://ecommerce-ui.com/images/items/dress-2.jpg" class="img-fluid" alt="product-image">
-                            </a>
-                        </div>
-                        <figcaption class="p-3">
-                            <p class="text-sm mb-0">
-                                <a href="#" class="text-secondary text-capitalize text-decoration-none hover:text-primary">Clothing</a>
-                            </p>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div>
-                                    <a href="#" class="h6 text-decoration-none hover:text-primary">Woman's dress</a>
-                                    <div class="price-wrap">
-                                        <span class="price text-primary h6 d-block">$345.00</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="btn btn-primary btn-icon flex-shrink-0">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    <figure class="card">
-                        <div class="img-wrap">
-                            <a href="#" class="d-block">
-                                <img src="https://ecommerce-ui.com/images/items/dress-1.jpg" class="img-fluid" alt="product-image">
-                            </a>
-                        </div>
-                        <figcaption class="p-3">
-                            <p class="text-sm mb-0">
-                                <a href="#" class="text-secondary text-capitalize text-decoration-none hover:text-primary">Clothing</a>
-                            </p>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div>
-                                    <a href="#" class="h6 text-decoration-none hover:text-primary">Woman's dress</a>
-                                    <div class="price-wrap">
-                                        <span class="price text-primary h6 d-block">$245.00</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="btn btn-primary btn-icon flex-shrink-0">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    <figure class="card">
-                        <div class="img-wrap">
-                            <a href="#" class="d-block">
-                                <img src="https://ecommerce-ui.com/images/items/phone-1.jpg" class="img-fluid" alt="product-image">
-                            </a>
-                        </div>
-                        <figcaption class="p-3">
-                            <p class="text-sm mb-0">
-                                <a href="#" class="text-secondary text-capitalize text-decoration-none hover:text-primary">Phones & Accessories</a>
-                            </p>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div>
-                                    <a href="#" class="h6 text-decoration-none hover:text-primary">Iphone 14 Pro max</a>
-                                    <div class="price-wrap">
-                                        <span class="price text-primary h6 d-block">$850.00</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="btn btn-primary btn-icon flex-shrink-0">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    <figure class="card">
-                        <div class="img-wrap">
-                            <a href="#" class="d-block">
-                                <img src="https://ecommerce-ui.com/images/items/camera-1.jpg" class="img-fluid" alt="product-image">
-                            </a>
-                        </div>
-                        <figcaption class="p-3">
-                            <p class="text-sm mb-0">
-                                <a href="#" class="text-secondary text-capitalize text-decoration-none hover:text-primary">Electronics</a>
-                            </p>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div>
-                                    <a href="#" class="h6 text-decoration-none hover:text-primary">Canon DSLR camera</a>
-                                    <div class="price-wrap">
-                                        <span class="price text-primary h6 d-block">$1200.00</span>
-                                    </div>
-                                </div>
-                                <a href="#" class="btn btn-primary btn-icon flex-shrink-0">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section-gift-card">
-        <div class="container max-sm:px- py-10">
-            <h2 class="h5 mb-4">Product catalogs</h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3 col-12">
-                    <a href="#" class="text-decoration-none">
-                        <figure class="card p-3 rounded-2xl">
-                            <img src="https://ecommerce-ui.com/images/items/card-1.jpg" class="img-fluid rounded-xl" alt="image">
-                            <figcaption class="mt-3">
-                                <h6 class="h6">Home and Kitchen</h6>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-3 col-12">
-                    <a href="#" class="text-decoration-none">
-                        <figure class="card p-3 rounded-2xl">
-                            <img src="https://ecommerce-ui.com/images/items/card-2.jpg" class="img-fluid rounded-xl" alt="image">
-                            <figcaption class="mt-3">
-                                <h6 class="h6">Sport and Outdoor</h6>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-3 col-12">
-                    <a href="#" class="text-decoration-none">
-                        <figure class="card p-3 rounded-2xl">
-                            <img src="https://ecommerce-ui.com/images/items/card-3.jpg" class="img-fluid rounded-xl" alt="image">
-                            <figcaption class="mt-3">
-                                <h6 class="h6">Toys and Hobby</h6>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-3 col-12">
-                    <a href="#" class="text-decoration-none">
-                        <figure class="card p-3 rounded-2xl">
-                            <img src="https://ecommerce-ui.com/images/items/card-4.jpg" class="img-fluid rounded-xl" alt="image">
-                            <figcaption class="mt-3">
-                                <h6 class="h6">Music and Gaming</h6>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    </main>
-<footer class="bg-color-secondary pt-10 pb-5">
-    <div class="container max-sm:px-">
-        <div class="row">
-            <div class="col-lg-3 col-12">
-                <a href="https://ecommerce-ui.com" class="d-block flex-shrink-0 hover:opacity-80 d-flex text-decoration-none align-items-center m-0">
-                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_i_4450_795)">
-                            <path d="M28 0H8C3.58172 0 0 3.58172 0 8V28C0 32.4183 3.58172 36 8 36H28C32.4183 36 36 32.4183 36 28V8C36 3.58172 32.4183 0 28 0Z" fill="var(--primary-500)"></path>
-                        </g>
-                    </svg>
-                    <span class="font-bold ml-2 text-xl">Ecommerce UI</span>
+            body {
+                font-family: var(--font-family-base);
+                font-weight: normal;
+                font-optical-sizing: auto;
+                line-height: 1.4;
+                -webkit-text-size-adjust: 100%;
+                background-color: white;
+                color: black;
+            }
+            
+            @media (max-width: 640px) {
+                html, body {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+
+            .page-concept {
+                padding-left: 20px;
+                padding-right: 20px;
+                box-sizing: border-box;
+
+            }
+
+            html {
+                scroll-behavior: smooth;
+                font-size: var(--font-size-default, 15px);
+            }
+
+            hr {
+                margin: 1rem 0;
+                color: inherit;
+                border: 0;
+                border-top: 1px solid #85858a;
+                opacity: 0.25;
+                width: 100%;
+                }
+
+        
+            /*-----Dropdown-----*/
+            .dropdown {
+                position: relative;
+            }
+            .dropdown button {
+                background-color: var(--blue-400);
+                border: none;
+                padding: 8px 12px;
+                border-radius: 5px;
+                cursor: pointer;
+                color: black;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                font-size: 1em;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                top: 35px;
+                left: 0;
+                background-color: var(--blue-300);
+                min-width: 150px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+                border-radius: 5px;
+                z-index: 10;
+            }
+            .dropdown-content a {
+                display: block;
+                padding: 8px 12px;
+                text-decoration: none;
+                color: black;
+            }
+            .dropdown-content a:hover {
+                background-color: var(--blue-500);
+            }
+            .dropdown:hover .dropdown-content {display: block;}
+            .dropdown button:hover {
+                background-color: var(--blue-700);
+                color: #fff;
+            }
+
+            /*------Navbar--------*/
+            .navbar {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 10px;
+            }
+
+            /*------Brand------*/
+            .brand {
+                display: flex;
+                align-items: center;
+            }
+            .brand-link {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                text-decoration: none;
+                color: var(--main-color);
+                font-family: var(--font-family);
+                font-size: 1.25rem;
+                font-weight: 700;
+            }
+            .brand-logo {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            .brand-link:hover {
+                opacity: 0.85;
+            }
+
+            @media (max-width: 600px) {
+                .brand-name {
+                    display: none;
+                }
+            }
+
+            /*------All Catalog-------*/
+            .dropdown-catalog {
+                position: relative;
+                display: inline-block;
+            }
+            .catalog-button {
+                background-color: var(--blue-300);
+                border: none;
+                padding: 8px 12px;
+                border-radius: 6px;
+                cursor: pointer;
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                color: black;
+                font-weight: 600;
+                font-family: var(--font-family);
+            }
+            .catalog-button:hover,
+            .dropdown-catalog:focus-within .catalog-button {
+                background-color: var(--blue-700);
+                color: #fff;
+            }
+            .catalog-menu {
+                display: none;
+                position: absolute;
+                top: calc(100% + 8px);
+                left: 0;
+                background-color: var(--blue-400);
+                min-width: 160px;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+                border-radius: 6px;
+                padding: 6px 0;
+                z-index: 20;
+            }
+            .catalog-menu a {
+                display: block;
+                padding: 8px 12px;
+                text-decoration: none;
+                color: var(--neutral-900);
+                font-family: var(--font-family);
+            }
+            .catalog-menu a:hover {
+                background-color: var(--blue-400);
+            }
+            .dropdown-catalog:hover .catalog-menu,
+            .dropdown-catalog:focus-within .catalog-menu {
+                display: block;
+            }
+
+            @media (max-width: 600px) {
+                .catalog-text {
+                    display: none;
+                }
+            }
+            
+            /*------Search bar------*/
+            .search-form {
+                display:flex;
+                align-items: center;
+                gap: 8px;
+                border: 2px solid var(--neutral-300);
+                border-radius: 10px;
+                overflow: hidden;
+                width: 100%;
+                max-width: 520px;
+                background-color: var(--neutral-0);
+                padding: 2px;
+            }
+            .search-input {
+                flex: 1;
+                padding: 8px 10px;
+                border: none;
+                outline: none;
+                font-size: var(--font-size-sm);
+                font-family: var(--font-family);
+                min-width: 150px;
+            }
+            .search-button {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: none;
+                background-color: var(--blue-300);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+            .search-button:hover {
+                background-color: var(--blue-700);
+                color: white;
+            }
+
+            @media (max-width: 768px) {
+                .catalog-button { order: 1; }
+                .brand          { order: 2; }
+                .sign-in-button { order: 3; }
+                .icon-group     { order: 4; }
+                .search-form {
+                    order: 5;
+                    flex: 1 1 90%;
+                }
+            }
+
+            /*-----Sign in-----*/
+            .sign-in-button {
+                display: inline-block;
+                align-items: center;
+                justify-content: center;
+                padding: 8px 14px;
+                border-radius: 6px;
+                background-color: var(--blue-300);
+                color: #000;
+                text-decoration: none;
+                font-weight: 700;
+                border: 2px bolid var(--blue-300);
+                font-family: var(--font-family);
+            }
+            .sign-in-button:hover,
+            .sign-in-button:focus {
+                background-color: var(--blue-700);
+                color: white;
+            }
+
+            /*--------icon-group--------*/
+            .icon-group {
+                display: flex;
+                gap: 2px;
+                align-items: center;
+            }
+            .icon-button {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: var(--blue-300);
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                color: #000;
+                position: relative;
+                transition: background-color 0.2s, transform 0.15s;
+            }
+            .icon-button svg {
+                width: 18px;
+                height: 18px;
+            }
+            .icon-button:hover,
+            .icon-button:focus {
+                background-color: var(--blue-700);
+                color: #fff;
+                transform: translateY(-2px);
+            }
+            .icon-button:after {
+                content: attr(data-tooltip);
+                position: absolute;
+                bottom: -34px;
+                left: 50%;
+                transform: translateX(-50%) scale(0);
+                background-color: var(--blue-700);
+                color: #fff;
+                padding: 6px 8px;
+                border-radius: 4px;
+                font-size: 0.78rem;
+                white-space: nowrap;
+                opacity: 0;
+                pointer-events: none;
+                transition: transform 0.12s ease, opacity 0.12s ease;
+            }
+            .icon-button:hover::after,
+            .icon-button:focus::after {
+                transform: translateX(-50%) scale(1);
+                opacity: 1;
+            }
+            .icon-button:focus {
+                outline: 3px solid rgba(50,168,82,0.18);
+                outline-offset: 3px;
+            }
+
+            /* ---------Navigation Bar-------- */
+            .extra-nav {
+                background-color: transparent;
+                padding: 8px 0;
+                font-family: var(--font-family);
+            }
+            .nav-list {
+                display: flex;
+                justify-content: center;
+                gap: 18px;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                flex-wrap: wrap;
+            }
+            .nav-link {
+                text-decoration: none;
+                color: var(--blue-600);
+                font-weight: 700;
+                padding: 6px 8px;
+                border-radius: 4px;
+                display: inline-block;
+            }
+            .nav-link:hover,
+            .nav-link:focus {
+                background-color: var(--blue-700);
+                color: #fff;
+            }
+            .nav-item.dropdown {
+                position: relative;
+            }
+            .nav-item.dropdown .dropdown-menu {
+                display: none;
+                position: absolute;
+                top: calc(100% + 8px);
+                left: 0;
+                background: white;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+                border-radius: 6px;
+                min-width: 160px;
+                padding: 6px 0;
+                z-index: 20;
+            }
+            .nav-item.dropdown:hover .dropdown-menu,
+            .nav-item.dropdown:focus-within .dropdown-menu {
+                display: block;
+            }
+            .nav-item.dropdown .dropdown-menu a {
+                display: block;
+                padding: 8px 12px;
+                color: var(--blue-600);
+                text-decoration: none;
+            }
+            .nav-item.dropdown .dropdown-menu a:hover {
+                background-color: #f0f0f0;
+            }
+            #menu-toggle {
+                display: none;
+            }
+            .menu-icon {
+                display: none;
+                font-size: 28px;
+                cursor: pointer;
+                padding: 8px;
+                background: white;
+                border-radius: 6px;
+            }
+            
+            @media (max-width: 768px) {
+                .nav-list {
+                    display: none;
+                    flex-direction: column;
+                    background: white;
+                    text-align: center;
+                    padding: 12px 0;
+                    margin-top: 8px;
+                    border-radius: 6px;
+                }
+
+                #menu-toggle:checked + .menu-icon + .nav-list {
+                    display: flex;
+                }
+
+                .menu-icon {
+                    display: inline-block;
+                    margin: 0;
+                }
+            }
+            /* ---------New trending-------- */
+
+            /* ---------Product Catalog-------- */
+            .catalog-circles {
+                padding: 20px 0;
+                background-color: var(--neutral-400);
+                font-family: var(--font-family);
+            }
+            .catalog-row {
+                display: flex;
+                gap: 18px;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .catalog-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                text-decoration: none;
+                color: #000;
+                width: 120px;
+            }
+            .catalog-item img {
+                width: 120px;
+                height: 120px;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 4px solid white;
+                background-color: var(--neutral-600);
+                transition: border-color 0.2s, transform 0.2s;
+            }
+            .catalog-item img:hover {
+                border-color: var(--blue-700);
+                transform: translateY(-4px);
+            }
+            .catalog-item P {
+                margin-top: 8px;
+                font-style: 0.95rem;
+                color: var(--blue-700);
+            }
+
+            /* ---------Most popular categories-------- */
+            .popular-section {
+                padding: 20px;
+                background-color: #fff;
+                font-family: var(--font-family);
+            }
+            .popular-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 12px;
+                align-items: start;
+            }
+            .popular-card {
+                border: 2px solid var(--neutral-400);
+                border-radius: 10px;
+                overflow: hidden;
+                background: white;
+                text-align: left;
+                padding: 0;
+                transition: border-color 0.2s, transform 0.15s;
+            }
+            .popular-card img {
+                width: 100%;
+                height: 140px;
+                object-fit: cover;
+                display: block;
+                transition: transform 0.25s ease;
+            }
+            .popular-card:hover img {
+                transform: translateY(-5px);
+            }
+            .popular-card p {
+                padding: 8px;
+                color: var(--blue-700);
+                font-weight: 600;
+            }
+            /* ---------Today's big deals-------- */
+            .todays-deals {
+                padding: 20px;
+                background-color: white;
+                font-family: var(--font-family);
+            }
+            .todays-deals h2 {
+                color: var(--blue-700);
+                text-align: center;
+                margin-bottom: 12px;
+            }
+            .deals-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: 16px;
+            }
+            .product-card {
+                position: relative;
+                background: #fff;
+                border: 2px solid white;
+                border-radius: 10px;
+                overflow: hidden;
+                padding-bottom: 10px;
+                transition: border-color 0.2s, transform 0.15s;
+            }
+           .product-card img {
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+                display: block;
+            }
+            .product-heart {
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                border: none;
+                background: white;
+                cursor: pointer;
+                font-size: 16px;
+                line-height: 36px;
+                text-align: center;
+                transition: background 0.15s, transform 0.12s;
+            }
+            .product-heart:hover,
+            .product-heart:focus {
+                background: var(--blue-700);
+                color: #fff;
+                transform: scale(1.08);
+            }
+            .product-info {
+                padding: 8px;
+            }
+            .product-name {
+                font-weight: 600;
+                color: black;
+                margin: 0 0 6px 0;
+                font-size: 0.95rem;
+            }
+            .product-price {
+                color: var(--orange-600);
+                margin: 0;
+                font-weight: 700;
+            }
+            .product-badge {
+                color: var(--green-600);
+                margin-top: 6px;
+                font-size: 0.9rem;
+            }
+            .product-card:hover {
+                border-color: var(--blue-700);
+                transform: translateY(-4px);
+            }
+
+            /* ---------Video Reviews-------- */
+
+            /* ---------Footer-------- */
+            .site-footer {
+                background-color: var(--blue-200);
+                padding: 28px 20px;
+                color: black;
+                font-family: var(--font-family);
+            }
+            .footer-grid {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 18px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            .footer-column h6 {
+                font-weight: 700;
+                font-size: 1.05rem;
+                margin-bottom: 10px;
+                color: black;
+            }
+            .footer-column ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .footer-column li {
+                margin-bottom: 8px;
+            }
+            .footer-column a {
+                text-decoration: none;
+                color: black;
+            }
+            .footer-column a:hover {
+                color: var(--blue-700);
+            }
+            .footer-divider {
+                border: none;
+                height: 1px;
+                background-color: white;
+                margin: 18px 0;
+            }
+            .footer-bottom {
+                text-align: center;
+                font-size: 0.9rem;
+                color: black;
+            }
+
+            @media (max-width: 768px) {
+                .footer-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            @media (max-width: 480px) {
+                .footer-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <!--Brand name anh logo-->
+            <div class="brand">
+                <a href="#" class ="brand-link">
+                    <img src="access/logo.jpg" alt="Logo brand" class="brand-logo">
+                    <span class="brand-name">BrandName</span>
                 </a>
-                <p class="mt-2 text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nam!
-                </p>
-                <div class="d-flex align-items-center gap-2 mt-4">
-                    <a href="#" class="btn btn-light btn-icon text-muted">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M16 8C16 6.89543 15.1046 6 14 6C12.8954 6 12 6.89543 12 8C12 9.10457 12.8954 10 14 10C15.1046 10 16 9.10457 16 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M8 16C8 14.8954 8.89543 14 10 14C11.1046 14 12 14.8954 12 16C12 17.1046 11.1046 18 10 18C8.89543 18 8 17.1046 8 16Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M16 16C16 14.8954 16.8954 14 18 14C19.1046 14 20 14.8954 20 16C20 17.1046 19.1046 18 18 18C16.8954 18 16 17.1046 16 16Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M4 16C4 14.8954 4.89543 14 6 14C7.10457 14 8 14.8954 8 16C8 17.1046 7.10457 18 6 18C4.89543 18 4 17.1046 4 16Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </a>
-                    <a href="#" class="btn btn-light btn-icon text-muted">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M10.25 17.25C10.25 17.25 12.3992 18.2501 14.2497 17.25C16.0999 16.2499 17.2498 14.25 17.2498 12C17.2498 9.75013 16.0999 7.75003 14.2497 6.75001C12.3992 5.75001 10.25 6.75 10.25 6.75L10.2498 6.75001V17.25H10.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </a>
-                    <a href="#" class="btn btn-light btn-icon text-muted">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 16.9209 5.67292 21.0478 10.5 21.8494V14.8953H8.5V12.0001H10.5V10.2319C10.5 7.91605 11.8906 6.64333 14.1554 6.64333C15.2287 6.64333 16.3421 6.84067 16.3421 6.84067V9.30932H15.0135C13.8863 9.30932 13.5225 9.94056 13.5225 10.8355V12.0001H16.2949L15.8665 14.8953H13.5225V21.8494C18.3562 21.0335 22 16.909 22 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </a>
-                    <a href="#" class="btn btn-light btn-icon text-muted">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M17.5002 8.5C18.1729 8.5 18.7188 7.95405 18.7188 7.28135C18.7188 6.60866 18.1729 6.06271 17.5002 6.06271C16.8275 6.06271 16.2815 6.60866 16.2815 7.28135C16.2815 7.95405 16.8275 8.5 17.5002 8.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M12 7.5C14.7614 7.5 17 9.73858 17 12.5C17 15.2614 14.7614 17.5 12 17.5C9.23858 17.5 7 15.2614 7 12.5C7 9.73858 9.23858 7.5 12 7.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </a>
+            </div>
+            
+            <!--All catalog-->
+            <div class="dropdown-catalog" tabindex="0">
+                <button class="catalog-button" aria-haspopup="true" aria-expanded="false">
+                    <svg class="cata svg" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <line x1="4" y1="6" x2="20" y2="6"></line>
+                        <line x1="4" y1="12" x2="20" y2="12"></line>
+                        <line x1="4" y1="18" x2="20" y2="18"></line>
+                    </svg>
+                    <span class="catalog-text">All Catalog</span>
+                </button>
+
+                <div class="catalog-menu" role="menu" aria-hidden="true">
+                        <a href="#" role="menuitem">Category 1</a>
+                        <a href="#" role="menuitem">Category 2</a>
+                        <a href="#" role="menuitem">Category 3</a>
                 </div>
             </div>
-            <div class="col-lg-3 col-12">
-                <h6 class="h6 mt-4 mt-lg-0 mb-3">Company</h6>
-                <div class="d-flex flex-column gap-2 links-secondary">
-                    <a href="#" class="text-decoration-none">About us</a>
-                    <a href="#" class="text-decoration-none">Careers</a>
-                    <a href="#" class="text-decoration-none">Stores</a>
-                    <a href="#" class="text-decoration-none">Contact us</a>
+
+            <!--------Search bar-------->
+            <form class="search-form" action="/search" method="get" role="search">
+                <input class="search-input" type="search" name="q" placeholder="Search Product of e-commerce store" aria-label="Search products or e-commerce store">
+                <button class="search-button" type="submit" aria-label="search">
+                    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </form>
+
+            <!---------Sign in-------->
+            <a href="#" class="sign-in-button" role="button">Sign In</a>
+
+            <!-----Icon group-------->
+            <div class="icon-group">
+                <!---------Save Lists-------->
+                <div class="icon-button" data-tooltip="Saved List" role="button" tabindex="0" aria-label="Saved List">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M12 20.5C12 20.5 2 14.5 2 8.7C2 5.8 4.1 3.5 7 3.5C8.5 3.5 10 4 12 6C14 4 15.5 3.5 17 3.5C19.9 3.5 22 5.8 22 8.7C22 14.5 12 20.5 12 20.5Z"></path>
+                    </svg>
                 </div>
-            </div>
-            <div class="col-lg-3 col-12">
-                <h6 class="h6 mt-4 mt-lg-0 mb-3">Shop</h6>
-                <div class="d-flex flex-column gap-2 links-secondary">
-                    <a href="#" class="text-decoration-none">All products</a>
-                    <a href="#" class="text-decoration-none">Popular products</a>
-                    <a href="#" class="text-decoration-none">Online sales</a>
-                    <a href="#" class="text-decoration-none">Hot offers</a>
+                <!---------My Order-------->
+                <div class="icon-button" data-tooltip="My Order" role="button" tabindex="0" aria-label="My Order">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M20.198 3H3.802C3.05147 3 2.41637 3.17726 2.41637 3.17726"></path>
+                    </svg>
                 </div>
-            </div>
-            <div class="col-lg-3 col-12">
-                <h6 class="h6 mt-4 mt-lg-0 mb-3">Support</h6>
-                <div class="d-flex flex-column gap-2 links-secondary">
-                    <a href="#" class="text-decoration-none">Faqs</a>
-                    <a href="#" class="text-decoration-none">Shipping info</a>
-                    <a href="#" class="text-decoration-none">Refund policy</a>
-                    <a href="#" class="text-decoration-none">How to order</a>
+                <!---------My Cart-------->
+                <div class="icon-button" data-tooltip="My Cart" role="button" tabindex="0" aria-label="My Cart">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M6 6H22"></path>
+                        <circle cx="6" cy="20" r="2"></circle>
+                        <circle cx="17" cy="20" r="2"></circle>
+                    </svg>
                 </div>
             </div>
         </div>
-        <hr class="mt-4 mb-4" />
-        <div class="d-flex max-sm:flex-wrap max-sm:gap-4 align-items-center justify-content-between">
-            <p> &copy; Ecommerce UI 2025. All Rights reserved </p>
-            <div class="d-flex align-items-center gap-2">
-                <img src="https://ecommerce-ui.com/images/payment-icons/visa.svg" height="24" alt="visa-card">
-                <img src="https://ecommerce-ui.com/images/payment-icons/mastercard.svg" height="24" alt="mastercard">
-                <img src="https://ecommerce-ui.com/images/payment-icons/paypal.svg" height="24" alt="paypal">
-                <img src="https://ecommerce-ui.com/images/payment-icons/american-express.svg" height="24" alt="american-express">
+
+        <!---------Navigation Bar-------->
+        <nav class="extra-nav" aria-label="Main navigation">
+            <!----menu-icon----->
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <!-----menu-items------>
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="#">Hot offers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Recommends</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">New arrivals</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Bestsellers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blind boxes</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Articles</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" aria-haspopup="true">Move▾</a>
+                    <div class="dropdown-menu">
+                        <a href="#">Example link 1</a>
+                        <a href="#">Example link 2</a>
+                        <a href="#">Get Ecommerce UI</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+
+        <!---------New trending-------->
+
+        <!---------Product Catalog-------->
+        <section class="catalog-circles" aria-label="Product categories">
+            <div class="catalog-row">
+                <a class="catalog-item" href="#">
+                    <img src="access/thoitrang.jpg" alt="Fashion" />
+                    <p>Fashion</p>
+                </a>
+
+                <a class="catalog-item" href="#">
+                    <img src="access/dogiadung.jpg" alt="Household Appliances" />
+                    <p>Household Appliances</p>
+                </a>
+
+                <a class="catalog-item" href="#">
+                    <img src="access/dientu.jpg" alt="Electronics" />
+                    <p>Electronics</p>
+                </a>
+
+                <a class="catalog-item" href="#">
+                    <img src="access/sach.jpg" alt="Books & Stationery" />
+                    <p>Books & Stationery</p>
+                </a>
+
+                <a class="catalog-item" href="#">
+                    <img src="access/mebe.jpg" alt="Mother & Baby" />
+                    <p>Mother & Baby</p>
+                </a>
+
+                <a class="catalog-item" href="#">
+                    <img src="access/noithat.png" alt="Interior" />
+                    <p>Interior</p>
+                </a>
+
+                <a class="catalog-item" href="#">
+                    <img src="access/sksd.png" alt="Health & Beauty" />
+                    <p>Health & Beauty</p>
+                </a>
+            </div>
+        </section>
+        <!---------Most popular categories-------->
+        <section class="popular-section" aria-label="Most popular categories">
+        <div class="popular-grid">
+            <article class="popular-card">
+            <img src="access/sanpham1.png" alt="Popular 1">
+            <p>Category A</p>
+            </article>
+
+            <article class="popular-card">
+            <img src="access/sanpham2.png" alt="Popular 2">
+            <p>Category B</p>
+            </article>
+
+            <article class="popular-card">
+            <img src="access/sanpham3.png" alt="Popular 3">
+            <p>Category C</p>
+            </article>
+
+            <article class="popular-card">
+            <img src="access/sanpham4.png" alt="Popular 4">
+            <p>Category D</p>
+            </article>
+
+            <article class="popular-card">
+            <img src="access/sanpham5.png" alt="Popular 5">
+            <p>Category D</p>
+            </article>
+
+            <article class="popular-card">
+            <img src="access/sanpham6.png" alt="Popular 6">
+            <p>Category D</p>
+            </article>
+
+            <article class="popular-card">
+            <img src="access/sanpham7.png" alt="Popular 7">
+            <p>Category D</p>
+            </article>
+
+            <article class="popular-card">
+            <img src="access/sanpham8.png" alt="Popular 8">
+            <p>Category D</p>
+            </article>
+
+            <article class="popular-card">
+            <img src="access/sanpham9.png" alt="Popular 9">
+            <p>Category D</p>
+            </article>
+
+            <article class="popular-card">
+            <img src="access/sanpham10.png" alt="Popular 10">
+            <p>Category D</p>
+            </article>
+        </div>
+        </section>
+
+        <!---------Today's big deals-------->
+        <section class="todays-deals" aria-label="Today's big deals">
+        <header>
+            <h2>Today's big deals</h2>
+        </header>
+
+        <div class="deals-grid">
+            <div class="product-card">
+            <img src="access/sanpham1.png" alt="Coffee and Tea Cup with Plate">
+            <button class="product-heart" aria-label="Add to wishlist">♥</button>
+            <div class="product-info">
+                <p class="product-name">Coffee and Tea Cup with Plate</p>
+                <p class="product-price">$50.00</p>
+                <p class="product-badge">freeship</p>
+            </div>
+            </div>
+
+            <div class="product-card">
+            <img src="access/sanpham2.png" alt="Product 2">
+            <button class="product-heart" aria-label="Add to wishlist">♥</button>
+            <div class="product-info">
+                <p class="product-name">Name of the product</p>
+                <p class="product-price">$60.00</p>
+                <p class="product-badge">freeship</p>
+            </div>
+            </div>
+
+            <div class="product-card">
+            <img src="access/sanpham3.png" alt="Product 3">
+            <button class="product-heart" aria-label="Add to wishlist">♥</button>
+            <div class="product-info">
+                <p class="product-name">Name of the product</p>
+                <p class="product-price">$79.00</p>
+                <p class="product-badge">freeship</p>
+            </div>
+            </div>
+
+            <div class="product-card">
+            <img src="access/sanpham4.png" alt="Product 4">
+            <button class="product-heart" aria-label="Add to wishlist">♥</button>
+            <div class="product-info">
+                <p class="product-name">Name of the product</p>
+                <p class="product-price">$63.00</p>
+                <p class="product-badge">freeship</p>
+            </div>
+            </div>
+
+            <div class="product-card">
+            <img src="access/sanpham5.png" alt="Product 5">
+            <button class="product-heart" aria-label="Add to wishlist">♥</button>
+            <div class="product-info">
+                <p class="product-name">Name of the product</p>
+                <p class="product-price">$63.00</p>
+                <p class="product-badge">freeship</p>
+            </div>
+            </div>
+
+            <div class="product-card">
+            <img src="access/sanpham6.png" alt="Product 6">
+            <button class="product-heart" aria-label="Add to wishlist">♥</button>
+            <div class="product-info">
+                <p class="product-name">Name of the product</p>
+                <p class="product-price">$63.00</p>
+                <p class="product-badge">freeship</p>
+            </div>
+            </div>
+
+            <div class="product-card">
+            <img src="access/sanpham7.png" alt="Product 7">
+            <button class="product-heart" aria-label="Add to wishlist">♥</button>
+            <div class="product-info">
+                <p class="product-name">Name of the product</p>
+                <p class="product-price">$63.00</p>
+                <p class="product-badge">freeship</p>
+            </div>
+            </div>
+
+            <div class="product-card">
+            <img src="access/sanpham8.png" alt="Product 8">
+            <button class="product-heart" aria-label="Add to wishlist">♥</button>
+            <div class="product-info">
+                <p class="product-name">Name of the product</p>
+                <p class="product-price">$63.00</p>
+                <p class="product-badge">freeship</p>
+            </div>
+            </div>
+
+            <div class="product-card">
+            <img src="access/sanpham9.png" alt="Product 9">
+            <button class="product-heart" aria-label="Add to wishlist">♥</button>
+            <div class="product-info">
+                <p class="product-name">Name of the product</p>
+                <p class="product-price">$63.00</p>
+                <p class="product-badge">freeship</p>
+            </div>
+            </div>
+
+            <div class="product-card">
+            <img src="access/sanpham10.png" alt="Product 10">
+            <button class="product-heart" aria-label="Add to wishlist">♥</button>
+            <div class="product-info">
+                <p class="product-name">Name of the product</p>
+                <p class="product-price">$63.00</p>
+                <p class="product-badge">freeship</p>
+            </div>
             </div>
         </div>
-    </div>
-</footer>
-<script src="https://unpkg.com/finalcss@1.2.1/dist/final.min.js"></script>
-</body>
-</html>
+        </section>
+
+        <!---------Video Reviews-------->
+
+        <!---------Footer-------->
+        <footer class="site-footer" role="contentinfo">
+            <div class="footer-grid">
+                <div class="footer-column">
+                <h6>Company</h6>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blogs and news</a></li>
+                    <li><a href="#">Example</a></li>
+                </ul>
+                </div>
+
+                <div class="footer-column">
+                <h6>Buyers</h6>
+                <ul>
+                    <li><a href="#">Find store</a></li>
+                    <li><a href="#">Registration</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                    <li><a href="#">Gift vouchers</a></li>
+                    <li><a href="#">Example</a></li>
+                </ul>
+                </div>
+
+                <div class="footer-column">
+                <h6>Help</h6>
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Live chat</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Versions</a></li>
+                </ul>
+                </div>
+
+                <div class="footer-column">
+                <h6>Service</h6>
+                <ul>
+                    <li><a href="#">Safe purchase</a></li>
+                    <li><a href="#">Logistics service</a></li>
+                    <li><a href="#">Refund</a></li>
+                    <li><a href="#">Example link</a></li>
+                    <li><a href="#">Something</a></li>
+                </ul>
+                </div>
+
+                <div class="footer-column">
+                <h6>Language</h6>
+                <ul>
+                    <li><a href="#">Español</a></li>
+                    <li><a href="#">Português</a></li>
+                    <li><a href="#">Deutsch</a></li>
+                    <li><a href="#">日本語</a></li>
+                </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p>Copyright © 2025 - 2027 DTHN</p>
+            </div>
+            </footer>
+    </body>
