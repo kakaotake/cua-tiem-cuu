@@ -1,1389 +1,420 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="The lagest's ecommerce site in VietNam">
-    <meta name="author" content="kakaotake.github.io">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Ecommerce templates for your next project">
+	<meta name="author" content="Ecommerce-ui.com">
 
-    <title>My website</title>
+	<title>Website layout sample </title>
 
-    <style>
-        @charset "UTF-8";
-        :root {
-            --neutral-0: #fff;
-            --neutral-50: #f8fafc;
-            --neutral-100: #f1f5f9;
-            --neutral-200: #e2e8f0;
-            --neutral-300: #cbd5e1;
-            --neutral-400: #A3B0C2;
-            --neutral-500: #6B7C94;
-            --neutral-600: #52637A;
-            --neutral-700: #334155;
-            --neutral-800: #1e293b;
-            --neutral-900: #0f172a;
-            --neutral-1000: #000;
-            --primary-100: #e0e7ff;
-            --primary-200: #c7d2fe;
-            --primary-300: #a5b4fc;
-            --primary-400: #818cf8;
-            --primary-500: #6163fe;
-            --primary-600: #4f46e5;
-            --primary-700: #4338ca;
-            --primary-800: #3730a3;
-            --primary-900: #312e81;
-            --blue-100: #dbeafe;
-            --blue-200: #bfdbfe;
-            --blue-300: #93c5fd;
-            --blue-400: #60a5fa;
-            --blue-500: #3780f6;
-            --blue-600: #2563eb;
-            --blue-700: #1d4ed8;
-            --blue-800: #1e40af;
-            --blue-900: #112a6e;
-            --red-100: #fee2e2;
-            --red-200: #fecaca;
-            --red-300: #fca5a5;
-            --red-400: #f87171;
-            --red-500: #ef3232;
-            --red-600: #d11616;
-            --red-700: #b91c1c;
-            --red-800: #991b1b;
-            --red-900: #671010;
-            --green-100: #DBFFE1;
-            --green-200: #bbf7d0;
-            --green-300: #86efac;
-            --green-400: #4ade80;
-            --green-500: #0dab47;
-            --green-600: #0d923e;
-            --green-700: #15803d;
-            --green-800: #166534;
-            --green-900: #0a4321;
-            --orange-100: #ffedd5;
-            --orange-200: #fed7aa;
-            --orange-300: #fdba74;
-            --orange-400: #fb923c;
-            --orange-500: #f97316;
-            --orange-600: #d14f09;
-            --orange-700: #b13606;
-            --orange-800: #87290a;
-            --orange-900: #5e1a04;
-            --yellow-100: #fff6a5;
-            --yellow-200: #ffed4a;
-            --yellow-300: #ffe11e;
-            --yellow-400: #fed507;
-            --yellow-500: #E5B800;
-            --yellow-600: #D6A400;
-            --yellow-700: #B88700;
-            --yellow-800: #996B00;
-            --yellow-900: #855800;
-            --purple-100: #f3e8ff;
-            --purple-200: #e9d5ff;
-            --purple-300: #d8b4fe;
-            --purple-400: #c084fc;
-            --purple-500: #a855f7;
-            --purple-600: #9333ea;
-            --purple-700: #7e22ce;
-            --purple-800: #6b21a8;
-            --purple-900: #3f0b68;
-            --teal-100: #ccfbf1;
-            --teal-200: #99f6e4;
-            --teal-300: #5eead4;
-            --teal-400: #2dd4bf;
-            --teal-500: #14b8a6;
-            --teal-600: #0d9488;
-            --teal-700: #0f766e;
-            --teal-800: #115e59;
-            --teal-900: #0c4844;
-            --alpha-1: rgba(0, 20, 60, .06);
-            --alpha-2: rgba(0, 20, 60, .10);
-            --alpha-3: rgba(0, 20, 60, .15);
-            --alpha-4: rgba(0, 20, 60, .2);
-            --alpha-5: rgba(0, 20, 60, .3);
-            --alpha-6: rgba(0, 20, 60, .4);
-            --alpha-7: rgba(0, 20, 60, .5);
-            --alpha-8: rgba(0, 20, 60, .6);
-            --alpha-9: rgba(0, 20, 60, .7);
-            --bg-color-base: #fff;
-            --bg-color-secondary: var(--neutral-50);
-            --border-color-default: var(--neutral-200);
-            --text-link-color: var(--primary-500);
-            --text-color-base: #000;
-            --text-color-secondary: var(--neutral-500);
-            --text-color-muted: var(--neutral-400);
-            --border-radius-base: 8px;
-            --border-radius-sm: 4px;
-            --border-radius-lg: 12px;
-            --border-radius-xl: 16px;
-            --font-family-base: system-ui, -apple-system, "Helvetica Neue", "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-            --font-size-default: 15px;
-            --font-size-sm: 0.9rem;
-            --line-height-base: 1.4;
-            --line-height-sm: 1.25;
-            --line-height-lg: 1.8;
-        }
+	<link href="css/final.css" rel="stylesheet" type="text/css" />
 
-        html {
-            scroll-behavior: smooth;
-            font-size: var(--font-size-default, 15px);
-        }
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: var(--font-family-base, Arial);
-            font-weight: normal;
-            font-optical-sizing: auto;
-            line-height: var(--line-height-base, 1.4);
-            color: var(--text-color-base, #000);
-            -webkit-text-size-adjust: 100%;
-        }
-
-        @media (max-width: 640px) {
-            html,
-            body {
-                font-size: 16px;
-                font-weight: 500;
-            }
-        }
-
-        .scrollbar-thin {
-            scrollbar-width: thin;
-            scrollbar-color: var(--neutral-300) rgba(0, 0, 0, 0);
-        }
-
-        hr {
-            margin: 1rem 0;
-            color: inherit;
-            border: 0;
-            border-top: 1px solid #85858a;
-            opacity: 0.25;
-            width: 100%;
-        }
-
-        p {
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-
-        abbr[title] {
-            text-decoration: underline dotted;
-            cursor: help;
-            text-decoration-skip-ink: none;
-        }
-
-        address {
-            margin-bottom: 1rem;
-            font-style: normal;
-            line-height: inherit;
-        }
-
-        ol,
-        ul {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-        }
-
-        dl {
-            margin: 0;
-        }
-
-        dt {
-            font-weight: 500;
-        }
-
-        dd {
-            margin-bottom: 0.5rem;
-            margin-left: 0;
-        }
-
-        blockquote {
-            margin: 0 0 1rem;
-        }
-
-        b,
-        strong {
-            font-weight: 600;
-        }
-
-        small {
-            font-size: var(--font-size-sm, 0.9rem);
-        }
-
-        sub,
-        sup {
-            position: relative;
-            font-size: 75em;
-            line-height: 0;
-            vertical-align: baseline;
-        }
-
-        sub {
-            bottom: -0.25em;
-        }
-
-        sup {
-            top: -0.5em;
-        }
-
-        a {
-            text-decoration: none;
-            color: var(--text-link-color, blue);
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        a.link {
-            text-decoration: underline;
-            text-underline-offset: 3px;
-            text-decoration-color: var(--primary-400);
-        }
-
-        a.link:hover {
-            text-decoration: none;
-        }
-
-        a:not([href]):not([class]),
-        a:not([href]):not([class]):hover {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        pre,
-        code,
-        kbd,
-        samp {
-            font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-            font-size: 1em;
-        }
-
-        pre {
-            display: block;
-            tab-size: 32px;
-            margin-top: 0;
-            margin-bottom: 1rem;
-            overflow: auto;
-            text-wrap: wrap;
-        }
-
-        pre code {
-            font-size: inherit;
-            color: inherit;
-            word-break: normal;
-            display: block;
-            padding: 8px;
-        }
-
-        code {
-            word-wrap: break-word;
-            padding: 0px 4px;
-            color: #b31b66;
-            font-weight: 500;
-        }
-
-        a>code {
-            color: inherit;
-        }
-
-        figure {
-            margin: 0;
-        }
-
-        img,
-        svg {
-            vertical-align: middle;
-            max-width: 100%;
-        }
-
-        img {
-            object-fit: cover;
-        }
-
-        table {
-            caption-side: bottom;
-            border-collapse: collapse;
-        }
-
-        caption {
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            text-align: left;
-        }
-
-        th {
-            font-weight: 500;
-            text-align: inherit;
-            text-align: -webkit-match-parent;
-        }
-
-        thead,
-        tbody,
-        tfoot,
-        tr,
-        td,
-        th {
-            border-color: inherit;
-            border-style: solid;
-            border-width: 0;
-        }
-
-        label {
-            display: inline-block;
-        }
-
-        [role=button] {
-            cursor: pointer;
-            user-select: none;
-        }
-
-        [role=button]:disabled,
-        [role=button].disabled {
-            opacity: 0.4;
-        }
-
-        button:focus:not(:focus-visible) {
-            outline: 0;
-        }
-
-        input,
-        button,
-        select,
-        optgroup,
-        textarea {
-            margin: 0;
-            font-family: inherit;
-            font-size: inherit;
-            line-height: inherit;
-        }
-
-        button,
-        select {
-            text-transform: none;
-        }
-
-        [role=button] {
-            cursor: pointer;
-            user-select: none;
-            text-decoration: none;
-        }
-
-        [role=button]:hover {
-            text-decoration: none;
-        }
-
-        select {
-            word-wrap: normal;
-        }
-
-        select:disabled {
-            opacity: 1;
-        }
-
-        [list]:not([type=date]):not([type=datetime-local]):not([type=month]):not([type=week]):not([type=time])::-webkit-calendar-picker-indicator {
-            display: none !important;
-        }
-
-        button,
-        [type=button],
-        [type=reset],
-        [type=submit] {
-            -webkit-appearance: button;
-            cursor: pointer;
-        }
-
-        ::-moz-focus-inner {
-            padding: 0;
-            border-style: none;
-        }
-
-        textarea {
-            resize: vertical;
-        }
-
-        fieldset {
-            min-width: 0;
-            padding: 0;
-            margin: 0;
-            border: 0;
-        }
-
-        legend {
-            float: left;
-            width: 100%;
-            padding: 0;
-            line-height: inherit;
-        }
-
-        legend+* {
-            clear: left;
-        }
-
-        ::-webkit-datetime-edit-fields-wrapper,
-        ::-webkit-datetime-edit-text,
-        ::-webkit-datetime-edit-minute,
-        ::-webkit-datetime-edit-hour-field,
-        ::-webkit-datetime-edit-day-field,
-        ::-webkit-datetime-edit-month-field,
-        ::-webkit-datetime-edit-year-field {
-            padding: 0;
-        }
-
-        ::-webkit-inner-spin-button {
-            height: auto;
-        }
-
-        [type=search] {
-            -webkit-appearance: textfield;
-            outline-offset: -2px;
-        }
-
-        ::-webkit-search-decoration {
-            -webkit-appearance: none;
-        }
-
-        ::-webkit-color-swatch-wrapper {
-            padding: 0;
-        }
-
-        ::file-selector-button {
-            font: inherit;
-            -webkit-appearance: button;
-        }
-
-        output {
-            display: inline-block;
-        }
-
-        iframe {
-            border: 0;
-        }
-
-        summary {
-            user-select: none;
-            cursor: pointer;
-        }
-
-        progress {
-            vertical-align: baseline;
-        }
-
-        [hidden] {
-            display: none !important;
-        }
-
-        var {
-            font-style: normal;
-            line-height: inherit;
-        }
-
-        progress {
-            width: 100%;
-            overflow: hidden;
-            padding: 0px;
-            height: 8px;
-            display: block;
-            border-radius: 4px;
-        }
-
-        .focus-none {
-            outline: none !important;
-        }
-
-        .outline-none {
-            outline: none !important;
-        }
-
-        .container {
-            max-width: 1280px;
-        }
-
-        .container,
-        .container-fluid {
-            width: 100%;
-            padding-right: 20px;
-            padding-left: 20px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        .row {
-            --flex-gap-rows: 0px;
-            --flex-gap-cols: 20px;
-            gap: 0 !important;
-            row-gap: 0 !important;
-            column-gap: 0 !important;
-            display: flex;
-            flex-wrap: wrap;
-            margin-left: calc(-0.5 * var(--flex-gap-cols));
-            margin-right: calc(-0.5 * var(--flex-gap-cols));
-            margin-top: calc(-1 * var(--flex-gap-rows));
-        }
-
-        .row>* {
-            flex: 0 0 auto;
-            max-width: 100%;
-            width: 100%;
-            padding-right: calc(var(--flex-gap-cols)* 0.5);
-            padding-left: calc(var(--flex-gap-cols)* 0.5);
-            margin-top: var(--flex-gap-rows);
-        }
-
-        .row-cols-auto>* {
-            width: auto;
-            flex: 0 0 auto !important;
-        }
-
-        .row-cols-1>* {
-            width: 100%;
-            flex: 0 0 auto !important;
-        }
-
-        .row-cols-2>* {
-            width: 50%;
-            flex: 0 0 auto !important;
-        }
-
-        .row-cols-3>* {
-            width: 33.33333333%;
-            flex: 0 0 auto !important;
-        }
-
-        .row-cols-4>* {
-            width: 25%;
-            flex: 0 0 auto !important;
-        }
-
-        .row-cols-5>* {
-            width: 20%;
-            flex: 0 0 auto !important;
-        }
-
-        .row-cols-6>* {
-            width: 16.66666667%;
-            flex: 0 0 auto !important;
-        }
-
-        .row-cols-7>* {
-            width: 14.285714%;
-            flex: 0 0 auto !important;
-        }
-
-        .row-cols-8>* {
-            width: 12.5%;
-            flex: 0 0 auto !important;
-        }
-
-        .row-cols-9>* {
-            width: 11.111111%;
-            flex: 0 0 auto !important;
-        }
-
-        .row-cols-10>* {
-            width: 10%;
-            flex: 0 0 auto !important;
-        }
-
-        .row-cols-11>* {
-            width: 9.09090909%;
-            flex: 0 0 auto !important;
-        }
-
-        .row-cols-12>* {
-            width: 8.33333333%;
-            flex: 0 0 auto !important;
-        }
-
-        .col {
-            flex: 1 0 0;
-        }
-
-        .col-auto {
-            flex: 0 0 auto;
-            width: auto;
-        }
-
-        .col-1 {
-            width: 8.33333333%;
-        }
-
-        .col-2 {
-            width: 16.66666667%;
-        }
-
-        .col-3 {
-            width: 25%;
-        }
-
-        .col-4 {
-            width: 33.33333333%;
-        }
-
-        .col-5 {
-            width: 41.66666667%;
-        }
-
-        .col-6 {
-            width: 50%;
-        }
-
-        .col-7 {
-            width: 58.33333333%;
-        }
-
-        .col-8 {
-            width: 66.66666667%;
-        }
-
-        .col-9 {
-            width: 75%;
-        }
-
-        .col-10 {
-            width: 83.33333333%;
-        }
-
-        .col-11 {
-            width: 91.66666667%;
-        }
-
-        .col-12 {
-            width: 100%;
-        }
-
-        .main-header {
-            border-bottom: 1px solid var(--border-color-default);
-        }
-
-        .header-container {
-            max-width: 1280px;
-            width: 100%;
-            padding-left: 20px;
-            padding-right: 20px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        .header-main-flex-container {
-            display: flex;
-            flex-wrap: wrap;
-            padding-top: 16px;
-            padding-bottom: 16px;
-            gap: 8px;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .header-left-section {
-            display: flex;
-            align-items: center;
-            margin-right: 16px;
-        }
-
-        .btn {
-            --btn-bg: transparent;
-            --btn-bg-hover: var(--neutral-100);
-            --btn-border-color: transparent;
-            --btn-border-hover-color: transparent;
-            --btn-text-color: inherit;
-            display: inline-flex;
-            flex-shrink: 0;
-            align-items: center;
-            justify-content: center;
-            height: var(--btn-size-md);
-            min-width: var(--btn-size-sm);
-            padding: var(--btn-padding-y) var(--btn-padding-x);
-            font-size: var(--btn-font-size-md);
-            font-weight: var(--btn-font-weight);
-            background-color: var(--btn-bg);
-            border: 1px solid var(--btn-border-color);
-            border-radius: var(--border-radius-base);
-            color: var(--btn-text-color);
-            line-height: 1.2;
-            white-space: nowrap;
-            text-align: center;
-            text-decoration: none;
-            vertical-align: middle;
-            position: relative;
-            cursor: pointer;
-            user-select: none;
-            gap: 8px;
-        }
-
-        .btn-default {
-            --btn-bg: var(--neutral-50);
-            --btn-bg-hover: var(--neutral-100);
-            --btn-border-color: var(--neutral-200);
-            --btn-border-hover-color: var(--neutral-300);
-        }
-
-        .btn-icon {
-            width: var(--btn-size-md);
-            padding-left: 0;
-            padding-right: 0;
-        }
-
-        .brand-logo-link {
-            display: block;
-            flex-shrink: 0;
-            margin: 0;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-        }
-
-        .brand-logo-link:hover {
-            opacity: 0.8;
-            text-decoration: none;
-        }
-
-        .header-search-form {
-            flex-grow: 1;
-        }
-
-        .search-form {
-            position: relative;
-        }
-
-        .search-form-group {
-            display: flex;
-            flex: 1;
-            min-width: 0;
-            position: relative;
-        }
-
-        .form-control {
-            width: 100%;
-            border: 1px solid var(--neutral-300);
-            background-color: var(--neutral-50);
-            padding: 10px;
-            border-radius: var(--border-radius-base);
-            line-height: var(--line-height-sm);
-        }
-
-        .form-control-search {
-            border-radius: 9999px;
-            padding-left: 18px;
-            padding-right: 18px;
-        }
-
-        .btn-search {
-            position: absolute;
-            right: 5px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 32px;
-            height: 32px;
-            padding: 0;
-            --btn-size-md: 36px;
-            --btn-bg-hover: transparent;
-            --btn-border-hover-color: transparent;
-        }
-
-        .header-right-icons {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .icon-link {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: var(--text-color-base);
-        }
-
-        .icon-link:hover {
-            color: var(--text-link-color);
-        }
-
-        .icon-link-sm {
-            gap: 4px;
-        }
-
-        .links-muted a {
-            color: var(--text-color-muted);
-        }
-
-        .hover-color-primary a:hover {
-            color: var(--primary-500);
-        }
-
-        .cart-count {
-            position: relative;
-            top: -10px;
-            right: 5px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            height: 16px;
-            min-width: 16px;
-            padding: 0 4px;
-            font-size: 11px;
-            line-height: 1;
-            color: #fff;
-            background-color: var(--red-500);
-            border-radius: 9999px;
-            border: 1.5px solid #fff;
-        }
-
-        .main-nav {
-            border-bottom: 1px solid var(--border-color-default);
-        }
-
-        .dropdown-css-only {
-            position: relative;
-        }
-
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            z-index: 1000;
-            padding: 8px 0;
-            margin: 0.125rem 0 0;
-            background-color: #fff;
-            background-clip: padding-box;
-            border: 1px solid rgba(0, 0, 0, 0.15);
-            border-radius: 0.25rem;
-            min-width: 200px;
-        }
-
-        .dropdown-css-only:hover .dropdown-menu {
-            display: block;
-        }
-        
-        .dropdown-item {
-            display: block;
-            width: 100%;
-            padding: 8px 16px;
-            clear: both;
-            font-weight: 400;
-            color: var(--neutral-800);
-            text-align: inherit;
-            white-space: nowrap;
-            background-color: transparent;
-            border: 0;
-            text-decoration: none;
-        }
-
-        .dropdown-item:hover,
-        .dropdown-item:focus {
-            color: var(--neutral-900);
-            text-decoration: none;
-            background-color: var(--neutral-100);
-        }
-
-        .btn-primary-lg {
-            height: var(--btn-size-lg);
-            font-size: var(--btn-font-size-lg);
-        }
-
-        .nav-list {
-            display: flex;
-            align-items: center;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .nav-item {
-            margin-right: 16px;
-        }
-
-        .nav-link {
-            display: block;
-            padding: 20px 0;
-            color: var(--text-color-secondary);
-        }
-
-        .nav-link:hover {
-            color: var(--text-link-color);
-        }
-
-        .main-content {
-            padding-top: 32px;
-            padding-bottom: 32px;
-        }
-
-        .product-banner {
-            position: relative;
-            height: 200px;
-            background-color: var(--neutral-100);
-            border-radius: 12px;
-            overflow: hidden;
-            padding: 32px;
-            color: var(--text-color-base);
-        }
-
-        .product-banner-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .product-banner-title {
-            font-size: 2.2rem;
-            font-weight: 500;
-        }
-
-        .product-banner-text {
-            font-size: 1.12rem;
-            color: var(--text-color-secondary);
-        }
-
-        .main-footer {
-            padding-top: 64px;
-            padding-bottom: 64px;
-            border-top: 1px solid var(--border-color-default);
-            background-color: var(--neutral-50);
-        }
-
-        .footer-grid {
-            display: grid;
-            gap: 32px;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-        }
-
-        .footer-col {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .brand-link {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 12px;
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .brand-link:hover {
-            opacity: 0.8;
-        }
-
-        .brand-text {
-            font-size: 1.3rem;
-            font-weight: 600;
-            line-height: 1;
-        }
-
-        .social-links-footer {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-top: auto;
-        }
-
-        .social-link {
-            width: 36px;
-            height: 36px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: var(--neutral-100);
-            border-radius: 9999px;
-            color: var(--text-color-muted);
-        }
-
-        .social-link:hover {
-            background-color: var(--neutral-200);
-        }
-
-        .footer-heading {
-            font-size: 1.12rem;
-            font-weight: 600;
-            margin-bottom: 16px;
-        }
-
-        .footer-links li {
-            margin-bottom: 8px;
-        }
-
-        .footer-link {
-            color: var(--text-color-secondary);
-            text-decoration: none;
-        }
-
-        .footer-link:hover {
-            text-decoration: underline;
-        }
-
-        .contact-info a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        .d-none {
-            display: none !important;
-        }
-
-        .d-lg-block {
-            display: block !important;
-        }
-
-        .d-md-block {
-            display: block !important;
-        }
-
-        .sm-d-none {
-            display: none !important;
-        }
-
-        @media (max-width: 640px) {
-            .header-main-flex-container {
-                flex-wrap: wrap !important;
-            }
-
-            .header-container {
-                padding-right: 0px !important;
-                padding-left: 0px !important;
-            }
-
-            .btn-menu {
-                display: inline-block !important;
-            }
-        }
-
-        @media (min-width: 641px) {
-            .sm-d-none {
-                display: none !important;
-            }
-
-            .nav-list {
-                display: flex !important;
-            }
-
-            .header-container {
-                padding-right: 20px !important;
-                padding-left: 20px !important;
-            }
-
-            .btn-menu {
-                display: none !important;
-            }
-        }
-
-        @media (min-width: 921px) {
-            .d-md-block {
-                display: block !important;
-            }
-        }
-
-        @media (min-width: 1201px) {
-            .d-lg-block {
-                display: block !important;
-            }
-        }
-
-        @media (max-width: 920px) {
-            .product-banner-title {
-                font-size: 1.8rem;
-            }
-
-            .product-banner-text {
-                font-size: 1rem;
-            }
-        }
-
-        @media (max-width: 640px) {
-            .product-banner {
-                padding: 24px;
-            }
-
-            .product-banner-title {
-                font-size: 1.5rem;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .footer-grid {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-        }
-
-        @media (max-width: 480px) {
-            .footer-grid {
-                grid-template-columns: repeat(1, minmax(0, 1fr));
-            }
-        }
-
-        @keyframes spinner-grow {
-            0% {
-                transform: scale(0);
-            }
-
-            50% {
-                opacity: 1;
-                transform: none;
-            }
-        }
-
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
-        }
-    </style>
+    <script src="script.js"></script>
+    
 </head>
 <body>
 
-    <header class="main-header">
-        <section>
-            <div class="header-container">
-                <div class="header-main-flex-container">
-                    <div class="header-left-section">
-                        <button class="btn btn-menu">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none">
-                                <path d="M4 5L20 5" stroke="currentColor" stroke-width="2"></path>
-                                <path d="M4 12L20 12" stroke="currentColor" stroke-width="2"></path>
-                                <path d="M4 19L20 19" stroke="currentColor" stroke-width="2"></path>
-                            </svg>
-                        </button>
-                        <a href="https://ecommerce-ui.com" class="brand-logo-link">
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g filter="url(#filter0_i_4450_795)">
-                                    <path d="M28 0H8C3.58172 0 0 3.58172 0 8V28C0 32.4183 3.58172 36 8 36H28C32.4183 36 36 32.4183 36 28V8C36 3.58172 32.4183 0 28 0Z" fill="#6163FE"></path>
-                                </g>
-                                <g filter="url(#filter1_d_4450_795)">
-                                    <path d="M12.9123 20.3168C11.5834 20.3168 10.4566 21.4436 10.4566 22.7725C10.4566 24.1014 11.5834 25.2282 12.9123 25.2282C14.2412 25.2282 15.368 24.1014 15.368 22.7725C15.368 21.4436 14.2412 20.3168 12.9123 20.3168Z" fill="white"></path>
-                                    <path d="M22.8273 20.3168C21.4984 20.3168 20.3716 21.4436 20.3716 22.7725C20.3716 24.1014 21.4984 25.2282 22.8273 25.2282C24.1562 25.2282 25.283 24.1014 25.283 22.7725C25.283 21.4436 24.1562 20.3168 22.8273 20.3168Z" fill="white"></path>
-                                    <path d="M10.4566 12.0168C10.4566 10.6879 11.5834 9.56104 12.9123 9.56104C14.2412 9.56104 15.368 10.6879 15.368 12.0168C15.368 13.3457 14.2412 14.4725 12.9123 14.4725C11.5834 14.4725 10.4566 13.3457 10.4566 12.0168Z" fill="white"></path>
-                                    <path d="M20.3716 12.0168C20.3716 10.6879 21.4984 9.56104 22.8273 9.56104C24.1562 9.56104 25.283 10.6879 25.283 12.0168C25.283 13.3457 24.1562 14.4725 22.8273 14.4725C21.4984 14.4725 20.3716 13.3457 20.3716 12.0168Z" fill="white"></path>
-                                </g>
-                                <defs>
-                                    <filter id="filter0_i_4450_795" x="0" y="0" width="36" height="36" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
-                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-                                        <feOffset dy="-4"></feOffset>
-                                        <feGaussianBlur stdDeviation="2.5"></feGaussianBlur>
-                                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
-                                        <feColorMatrix type="matrix" values="0 0 0 0 0.188235 0 0 0 0 0.188235 0 0 0 0 0.231373 0 0 0 0.25 0"></feColorMatrix>
-                                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_4450_795"></feBlend>
-                                    </filter>
-                                    <filter id="filter1_d_4450_795" x="9.4566" y="8.56104" width="16.8264" height="17.6672" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-                                        <feOffset dy="1"></feOffset>
-                                        <feGaussianBlur stdDeviation="0.5"></feGaussianBlur>
-                                        <feComposite in2="hardAlpha" operator="out"></feComposite>
-                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
-                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4450_795"></feBlend>
-                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4450_795" result="shape"></feBlend>
-                                    </filter>
-                                </defs>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="header-search-form">
-                        <form class="search-form">
-                            <div class="search-form-group">
-                                <input type="text" class="form-control form-control-search" placeholder="Search product">
-                                <button class="btn btn-search">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none">
-                                        <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="header-right-icons">
-                        <a href="#" class="icon-link icon-link-sm">
-                            <span class="d-none d-lg-block">
-                                <span class="links-muted hover-color-primary">Become a Seller</span>
-                            </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                            </svg>
-                        </a>
-                        <a href="#" class="icon-link icon-link-sm">
-                            <span class="d-none d-lg-block">
-                                <span class="links-muted hover-color-primary">My cart</span>
-                            </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="9" cy="21" r="1"></circle>
-                                <circle cx="20" cy="21" r="1"></circle>
-                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                            </svg>
-                            <span class="cart-count">3</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </header>
-    <nav class="main-nav border-bottom d-none d-md-block">
-        <div class="container">
-            <div class="d-flex align-items-center">
-                <div class="dropdown-css-only me-4">
-                    <a href="#" class="btn btn-primary btn-primary-lg">
+<header class="border-bottom">
+    <section>
+        <div class="container max-sm:px-">
+            <div class="d-flex max-sm:flex-wrap py-4  gap-2 align-items-center justify-content-between">
+                <div class="d-flex align-items-center mr-4">
+                    <button class="btn btn-default btn-icon mr-2 sm:d-none">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none">
                             <path d="M4 5L20 5" stroke="currentColor" stroke-width="2"></path>
                             <path d="M4 12L20 12" stroke="currentColor" stroke-width="2"></path>
                             <path d="M4 19L20 19" stroke="currentColor" stroke-width="2"></path>
                         </svg>
-                        <span class="text-white text-md-sm">All categories</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Men's clothing</a></li>
-                        <li><a class="dropdown-item" href="#">Women's clothing</a></li>
-                        <li><a class="dropdown-item" href="#">Home accessories</a></li>
-                        <li><a class="dropdown-item" href="#">Electronics</a></li>
-                        <li><a class="dropdown-item" href="#">Footwear</a></li>
-                        <li><a class="dropdown-item" href="#">Jewelry</a></li>
-                    </ul>
-                </div>
-                <ul class="nav-list d-none d-lg-flex">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="main-content">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="product-banner">
-                        <div class="product-banner-content">
-                            <h2 class="product-banner-title">
-                                Product Title
-                            </h2>
-                            <p class="product-banner-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, at.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <a href="#" class="brand-link">
+                    </button>
+                    <a href="https://ecommerce-ui.com" class="d-block flex-shrink-0 hover:opacity-80 d-flex text-decoration-none align-items-center m-0">
                         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g filter="url(#filter0_i_4450_795)">
-                                <path d="M28 0H8C3.58172 0 0 3.58172 0 8V28C0 32.4183 3.58172 36 8 36H28C32.4183 36 36 32.4183 36 28V8C36 3.58172 32.4183 0 28 0Z" fill="#6163FE"></path>
-                            </g>
-                            <g filter="url(#filter1_d_4450_795)">
-                                <path d="M12.9123 20.3168C11.5834 20.3168 10.4566 21.4436 10.4566 22.7725C10.4566 24.1014 11.5834 25.2282 12.9123 25.2282C14.2412 25.2282 15.368 24.1014 15.368 22.7725C15.368 21.4436 14.2412 20.3168 12.9123 20.3168Z" fill="white"></path>
-                                <path d="M22.8273 20.3168C21.4984 20.3168 20.3716 21.4436 20.3716 22.7725C20.3716 24.1014 21.4984 25.2282 22.8273 25.2282C24.1562 25.2282 25.283 24.1014 25.283 22.7725C25.283 21.4436 24.1562 20.3168 22.8273 20.3168Z" fill="white"></path>
-                                <path d="M10.4566 12.0168C10.4566 10.6879 11.5834 9.56104 12.9123 9.56104C14.2412 9.56104 15.368 10.6879 15.368 12.0168C15.368 13.3457 14.2412 14.4725 12.9123 14.4725C11.5834 14.4725 10.4566 13.3457 10.4566 12.0168Z" fill="white"></path>
-                                <path d="M20.3716 12.0168C20.3716 10.6879 21.4984 9.56104 22.8273 9.56104C24.1562 9.56104 25.283 10.6879 25.283 12.0168C25.283 13.3457 24.1562 14.4725 22.8273 14.4725C21.4984 14.4725 20.3716 13.3457 20.3716 12.0168Z" fill="white"></path>
+                                <path d="M28 0H8C3.58172 0 0 3.58172 0 8V28C0 32.4183 3.58172 36 8 36H28C32.4183 36 36 32.4183 36 28V8C36 3.58172 32.4183 0 28 0Z" fill="var(--primary-500)"></path>
                             </g>
                             <defs>
-                                <filter id="filter0_i_4450_795" x="0" y="0" width="36" height="36" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <filter id="filter0_i_4450_795" x="0" y="-4" width="36" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                                     <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
                                     <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
                                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
                                     <feOffset dy="-4"></feOffset>
-                                    <feGaussianBlur stdDeviation="2.5"></feGaussianBlur>
+                                    <feGaussianBlur stdDeviation="2"></feGaussianBlur>
                                     <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0.188235 0 0 0 0 0.188235 0 0 0 0 0.231373 0 0 0 0.25 0"></feColorMatrix>
-                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_4450_795"></feBlend>
-                                </filter>
-                                <filter id="filter1_d_4450_795" x="9.4566" y="8.56104" width="16.8264" height="17.6672" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-                                    <feOffset dy="1"></feOffset>
-                                    <feGaussianBlur stdDeviation="0.5"></feGaussianBlur>
-                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
                                     <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
-                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4450_795"></feBlend>
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4450_795" result="shape"></feBlend>
+                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_4450_795"></feBlend>
                                 </filter>
                             </defs>
                         </svg>
-                        <div class="brand-text">E-COMMERCE UI</div>
                     </a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, dolor.</p>
-                    <div class="social-links-footer">
-                        <a href="#" class="social-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                <path d="M17.5 6.5h.01"></path>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2A54.32 54.32 0 0 0 12 4c-2.82 0-5.67.11-8.6.42a2.78 2.78 0 0 0-1.94 2A29.09 29.09 0 0 0 2 12c0 2.83.11 5.68.42 8.6a2.78 2.78 0 0 0 1.94 2 54.32 54.32 0 0 0 7.64.42c2.82 0 5.67-.11 8.6-.42a2.78 2.78 0 0 0 1.94-2 29.09 29.09 0 0 0 .42-8.6c0-2.83-.11-5.68-.42-8.6z"></path>
-                                <path d="M15 10l-5 3v-6z"></path>
-                            </svg>
-                        </a>
-                    </div>
                 </div>
-                <div class="footer-col">
-                    <h6 class="footer-heading">Shop</h6>
-                    <ul class="footer-links">
-                        <li><a href="#" class="footer-link">Featured</a></li>
-                        <li><a href="#" class="footer-link">Trending</a></li>
-                        <li><a href="#" class="footer-link">New arrivals</a></li>
-                        <li><a href="#" class="footer-link">Special offers</a></li>
-                        <li><a href="#" class="footer-link">Best selling</a></li>
-                    </ul>
+                <div class="header-search-wrap d-none d-lg-block">
+                    <form action="#" class="search">
+                        <div class="input-group">
+                            <input type="search" class="form-control" style="width:50%" placeholder="I'm looking for..." />
+                            <select class="form-select flex-grow-0 flex-shrink-0" style="width:140px">
+                                <option value="">All category</option>
+                                <option value="">Electronics </option>
+                                <option value="">Mobile</option>
+                                <option value="">Clothes</option>
+                            </select>
+                            <button class="btn btn-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#fff" fill="none">
+                                    <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
                 </div>
-                <div class="footer-col">
-                    <h6 class="footer-heading">Support</h6>
-                    <ul class="footer-links">
-                        <li><a href="#" class="footer-link">Shipping & Returns</a></li>
-                        <li><a href="#" class="footer-link">FAQ</a></li>
-                        <li><a href="#" class="footer-link">Contact us</a></li>
-                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
-                        <li><a href="#" class="footer-link">Terms & Conditions</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h6 class="footer-heading">Contact</h6>
-                    <p>123 Main Street, Anytown, USA</p>
-                    <p>
-                        <a href="mailto:info@example.com" class="footer-link">info@example.com</a>
-                    </p>
-                    <p>
-                        <a href="tel:+1234567890" class="footer-link">+1 (234) 567-890</a>
-                    </p>
+                <div class="d-flex align-items-center gap-2">
+                    <a href="https://ecommerce-ui.com/page-profile.html" class="btn btn-light btn-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.9999 12.0001C14.209 12.0001 15.9999 10.2092 15.9999 8.00011C15.9999 5.79105 14.209 4.00011 11.9999 4.00011C9.79075 4.00011 7.99982 5.79105 7.99982 8.00011C7.99982 10.2092 9.79075 12.0001 11.9999 12.0001Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M4.24976 19.4999C4.24976 16.5001 7.74976 14 11.9998 14C16.2498 14 19.7498 16.5001 19.7498 19.4999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                    <a href="https://ecommerce-ui.com/page-wishlist.html" class="btn btn-light btn-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.232 5.068C17.072 4.01353 15.5451 3.49122 13.9877 3.51347C12.4303 3.53572 10.9168 4.3013 9.80587 5.5186C9.52552 5.82422 9.25557 6.16016 9.00004 6.52002C8.74452 6.16016 8.47457 5.82422 8.19422 5.5186C7.08329 4.3013 5.56976 3.53572 4.01235 3.51347C2.45494 3.49122 0.928066 4.01353 -0.232 5.068C-1.392 6.12247 -1.97541 7.64166 -1.82855 9.17242C-1.68169 10.7032 -0.871131 12.1192 0.297423 13.1902L9.00004 22.0001L17.7027 13.1902C18.8712 12.1192 19.6818 10.7032 19.8286 9.17242C19.9754 7.64166 19.392 6.12247 18.232 5.068V5.068Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                    <a href="https://ecommerce-ui.com/page-shopping-cart.html" class="btn btn-light btn-icon btn-cart">
+                        <span class="badge rounded-full bg-primary-600">3</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.52843 3.47353C4.08636 3.01344 4.80512 2.76662 5.55648 2.75001H18.4435C19.1949 2.76662 19.9136 3.01344 20.4716 3.47353C21.0295 3.93363 21.4939 4.58249 21.8021 5.34293C22.1104 6.10338 22.2536 6.94639 22.2227 7.79469V15.0001C22.2227 16.5914 21.4646 18.1189 20.1065 19.1678C18.7484 20.2166 16.9298 20.6729 15.2014 20.443L9.63588 19.6644C8.42106 19.4934 7.28821 18.9959 6.36866 18.2281C5.4491 17.4602 4.77383 16.452 4.41737 15.2972C4.06091 14.1424 4.03264 12.8906 4.33534 11.7226C4.63804 10.5546 5.26388 9.51954 6.1415 8.74052L7.99982 7.00011" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                    <a href="https://ecommerce-ui.com/page-shopping-cart.html" class="btn btn-primary">
+                        <span class="d-none d-lg-inline-block">Cart</span> 
+                        <svg class="d-lg-none" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.52843 3.47353C4.08636 3.01344 4.80512 2.76662 5.55648 2.75001H18.4435C19.1949 2.76662 19.9136 3.01344 20.4716 3.47353C21.0295 3.93363 21.4939 4.58249 21.8021 5.34293C22.1104 6.10338 22.2536 6.94639 22.2227 7.79469V15.0001C22.2227 16.5914 21.4646 18.1189 20.1065 19.1678C18.7484 20.2166 16.9298 20.6729 15.2014 20.443L9.63588 19.6644C8.42106 19.4934 7.28821 18.9959 6.36866 18.2281C5.4491 17.4602 4.77383 16.452 4.41737 15.2972C4.06091 14.1424 4.03264 12.8906 4.33534 11.7226C4.63804 10.5546 5.26388 9.51954 6.1415 8.74052L7.99982 7.00011" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                    
                 </div>
             </div>
         </div>
-    </footer>
-
+    </section>
+</header>
+<main class="main-wrap">
+    <div class="bg-light pt-3">
+        <div class="container max-sm:px-">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">All products</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <section class="section-hero">
+        <div class="container max-sm:px-">
+            <div class="d-flex align-items-center flex-wrap p-4 text-center rounded-2xl bg-primary-100 position-relative" style="background-image: url('https://ecommerce-ui.com/images/banner/cover1.jpg'); background-size: cover; background-position: center; min-height: 250px;">
+                <div class="col-lg-6 col-12">
+                    <div class="text-white">
+                        <h1 class="display-5 font-bold">New collection is here!</h1>
+                        <p class="lead">Check out our new products and offers</p>
+                        <a href="#" class="btn btn-light">Shop now</a>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+    <section class="section-categories">
+        <div class="container max-sm:px- py-10">
+            <h2 class="h5 mb-4">Product categories</h2>
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3">
+                <div class="col">
+                    <a href="#" class="d-block text-center text-decoration-none bg-light rounded-xl overflow-hidden hover:scale-105 transition">
+                        <img src="https://ecommerce-ui.com/images/icons/shirt-icon.svg" height="120" class="img-fluid" alt="">
+                        <p class="mt-2 mb-2">Clothing</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="d-block text-center text-decoration-none bg-light rounded-xl overflow-hidden hover:scale-105 transition">
+                        <img src="https://ecommerce-ui.com/images/icons/game-icon.svg" height="120" class="img-fluid" alt="">
+                        <p class="mt-2 mb-2">Gaming</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="d-block text-center text-decoration-none bg-light rounded-xl overflow-hidden hover:scale-105 transition">
+                        <img src="https://ecommerce-ui.com/images/icons/gadget-icon.svg" height="120" class="img-fluid" alt="">
+                        <p class="mt-2 mb-2">Gadgets</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="d-block text-center text-decoration-none bg-light rounded-xl overflow-hidden hover:scale-105 transition">
+                        <img src="https://ecommerce-ui.com/images/icons/camera-icon.svg" height="120" class="img-fluid" alt="">
+                        <p class="mt-2 mb-2">Electronics</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="d-block text-center text-decoration-none bg-light rounded-xl overflow-hidden hover:scale-105 transition">
+                        <img src="https://ecommerce-ui.com/images/icons/book-icon.svg" height="120" class="img-fluid" alt="">
+                        <p class="mt-2 mb-2">Books</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="d-block text-center text-decoration-none bg-light rounded-xl overflow-hidden hover:scale-105 transition">
+                        <img src="https://ecommerce-ui.com/images/icons/gift-icon.svg" height="120" class="img-fluid" alt="">
+                        <p class="mt-2 mb-2">Gift</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-product-lists">
+        <div class="container max-sm:px- py-10">
+            <h2 class="h5 mb-4">New products</h2>
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6 col-12">
+                    <figure class="card">
+                        <div class="img-wrap">
+                            <a href="#" class="d-block">
+                                <img src="https://ecommerce-ui.com/images/items/dress-2.jpg" class="img-fluid" alt="product-image">
+                            </a>
+                        </div>
+                        <figcaption class="p-3">
+                            <p class="text-sm mb-0">
+                                <a href="#" class="text-secondary text-capitalize text-decoration-none hover:text-primary">Clothing</a>
+                            </p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <a href="#" class="h6 text-decoration-none hover:text-primary">Woman's dress</a>
+                                    <div class="price-wrap">
+                                        <span class="price text-primary h6 d-block">$345.00</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-icon flex-shrink-0">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <figure class="card">
+                        <div class="img-wrap">
+                            <a href="#" class="d-block">
+                                <img src="https://ecommerce-ui.com/images/items/dress-1.jpg" class="img-fluid" alt="product-image">
+                            </a>
+                        </div>
+                        <figcaption class="p-3">
+                            <p class="text-sm mb-0">
+                                <a href="#" class="text-secondary text-capitalize text-decoration-none hover:text-primary">Clothing</a>
+                            </p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <a href="#" class="h6 text-decoration-none hover:text-primary">Woman's dress</a>
+                                    <div class="price-wrap">
+                                        <span class="price text-primary h6 d-block">$245.00</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-icon flex-shrink-0">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <figure class="card">
+                        <div class="img-wrap">
+                            <a href="#" class="d-block">
+                                <img src="https://ecommerce-ui.com/images/items/phone-1.jpg" class="img-fluid" alt="product-image">
+                            </a>
+                        </div>
+                        <figcaption class="p-3">
+                            <p class="text-sm mb-0">
+                                <a href="#" class="text-secondary text-capitalize text-decoration-none hover:text-primary">Phones & Accessories</a>
+                            </p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <a href="#" class="h6 text-decoration-none hover:text-primary">Iphone 14 Pro max</a>
+                                    <div class="price-wrap">
+                                        <span class="price text-primary h6 d-block">$850.00</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-icon flex-shrink-0">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <figure class="card">
+                        <div class="img-wrap">
+                            <a href="#" class="d-block">
+                                <img src="https://ecommerce-ui.com/images/items/camera-1.jpg" class="img-fluid" alt="product-image">
+                            </a>
+                        </div>
+                        <figcaption class="p-3">
+                            <p class="text-sm mb-0">
+                                <a href="#" class="text-secondary text-capitalize text-decoration-none hover:text-primary">Electronics</a>
+                            </p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <a href="#" class="h6 text-decoration-none hover:text-primary">Canon DSLR camera</a>
+                                    <div class="price-wrap">
+                                        <span class="price text-primary h6 d-block">$1200.00</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-icon flex-shrink-0">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 4V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-gift-card">
+        <div class="container max-sm:px- py-10">
+            <h2 class="h5 mb-4">Product catalogs</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 col-12">
+                    <a href="#" class="text-decoration-none">
+                        <figure class="card p-3 rounded-2xl">
+                            <img src="https://ecommerce-ui.com/images/items/card-1.jpg" class="img-fluid rounded-xl" alt="image">
+                            <figcaption class="mt-3">
+                                <h6 class="h6">Home and Kitchen</h6>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 col-12">
+                    <a href="#" class="text-decoration-none">
+                        <figure class="card p-3 rounded-2xl">
+                            <img src="https://ecommerce-ui.com/images/items/card-2.jpg" class="img-fluid rounded-xl" alt="image">
+                            <figcaption class="mt-3">
+                                <h6 class="h6">Sport and Outdoor</h6>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 col-12">
+                    <a href="#" class="text-decoration-none">
+                        <figure class="card p-3 rounded-2xl">
+                            <img src="https://ecommerce-ui.com/images/items/card-3.jpg" class="img-fluid rounded-xl" alt="image">
+                            <figcaption class="mt-3">
+                                <h6 class="h6">Toys and Hobby</h6>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 col-12">
+                    <a href="#" class="text-decoration-none">
+                        <figure class="card p-3 rounded-2xl">
+                            <img src="https://ecommerce-ui.com/images/items/card-4.jpg" class="img-fluid rounded-xl" alt="image">
+                            <figcaption class="mt-3">
+                                <h6 class="h6">Music and Gaming</h6>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+<footer class="bg-color-secondary pt-10 pb-5">
+    <div class="container max-sm:px-">
+        <div class="row">
+            <div class="col-lg-3 col-12">
+                <a href="https://ecommerce-ui.com" class="d-block flex-shrink-0 hover:opacity-80 d-flex text-decoration-none align-items-center m-0">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_i_4450_795)">
+                            <path d="M28 0H8C3.58172 0 0 3.58172 0 8V28C0 32.4183 3.58172 36 8 36H28C32.4183 36 36 32.4183 36 28V8C36 3.58172 32.4183 0 28 0Z" fill="var(--primary-500)"></path>
+                        </g>
+                    </svg>
+                    <span class="font-bold ml-2 text-xl">Ecommerce UI</span>
+                </a>
+                <p class="mt-2 text-sm">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nam!
+                </p>
+                <div class="d-flex align-items-center gap-2 mt-4">
+                    <a href="#" class="btn btn-light btn-icon text-muted">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M16 8C16 6.89543 15.1046 6 14 6C12.8954 6 12 6.89543 12 8C12 9.10457 12.8954 10 14 10C15.1046 10 16 9.10457 16 8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M8 16C8 14.8954 8.89543 14 10 14C11.1046 14 12 14.8954 12 16C12 17.1046 11.1046 18 10 18C8.89543 18 8 17.1046 8 16Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M16 16C16 14.8954 16.8954 14 18 14C19.1046 14 20 14.8954 20 16C20 17.1046 19.1046 18 18 18C16.8954 18 16 17.1046 16 16Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M4 16C4 14.8954 4.89543 14 6 14C7.10457 14 8 14.8954 8 16C8 17.1046 7.10457 18 6 18C4.89543 18 4 17.1046 4 16Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="btn btn-light btn-icon text-muted">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M10.25 17.25C10.25 17.25 12.3992 18.2501 14.2497 17.25C16.0999 16.2499 17.2498 14.25 17.2498 12C17.2498 9.75013 16.0999 7.75003 14.2497 6.75001C12.3992 5.75001 10.25 6.75 10.25 6.75L10.2498 6.75001V17.25H10.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="btn btn-light btn-icon text-muted">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 16.9209 5.67292 21.0478 10.5 21.8494V14.8953H8.5V12.0001H10.5V10.2319C10.5 7.91605 11.8906 6.64333 14.1554 6.64333C15.2287 6.64333 16.3421 6.84067 16.3421 6.84067V9.30932H15.0135C13.8863 9.30932 13.5225 9.94056 13.5225 10.8355V12.0001H16.2949L15.8665 14.8953H13.5225V21.8494C18.3562 21.0335 22 16.909 22 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="btn btn-light btn-icon text-muted">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M17.5002 8.5C18.1729 8.5 18.7188 7.95405 18.7188 7.28135C18.7188 6.60866 18.1729 6.06271 17.5002 6.06271C16.8275 6.06271 16.2815 6.60866 16.2815 7.28135C16.2815 7.95405 16.8275 8.5 17.5002 8.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M12 7.5C14.7614 7.5 17 9.73858 17 12.5C17 15.2614 14.7614 17.5 12 17.5C9.23858 17.5 7 15.2614 7 12.5C7 9.73858 9.23858 7.5 12 7.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12">
+                <h6 class="h6 mt-4 mt-lg-0 mb-3">Company</h6>
+                <div class="d-flex flex-column gap-2 links-secondary">
+                    <a href="#" class="text-decoration-none">About us</a>
+                    <a href="#" class="text-decoration-none">Careers</a>
+                    <a href="#" class="text-decoration-none">Stores</a>
+                    <a href="#" class="text-decoration-none">Contact us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12">
+                <h6 class="h6 mt-4 mt-lg-0 mb-3">Shop</h6>
+                <div class="d-flex flex-column gap-2 links-secondary">
+                    <a href="#" class="text-decoration-none">All products</a>
+                    <a href="#" class="text-decoration-none">Popular products</a>
+                    <a href="#" class="text-decoration-none">Online sales</a>
+                    <a href="#" class="text-decoration-none">Hot offers</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12">
+                <h6 class="h6 mt-4 mt-lg-0 mb-3">Support</h6>
+                <div class="d-flex flex-column gap-2 links-secondary">
+                    <a href="#" class="text-decoration-none">Faqs</a>
+                    <a href="#" class="text-decoration-none">Shipping info</a>
+                    <a href="#" class="text-decoration-none">Refund policy</a>
+                    <a href="#" class="text-decoration-none">How to order</a>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-4 mb-4" />
+        <div class="d-flex max-sm:flex-wrap max-sm:gap-4 align-items-center justify-content-between">
+            <p> &copy; Ecommerce UI 2025. All Rights reserved </p>
+            <div class="d-flex align-items-center gap-2">
+                <img src="https://ecommerce-ui.com/images/payment-icons/visa.svg" height="24" alt="visa-card">
+                <img src="https://ecommerce-ui.com/images/payment-icons/mastercard.svg" height="24" alt="mastercard">
+                <img src="https://ecommerce-ui.com/images/payment-icons/paypal.svg" height="24" alt="paypal">
+                <img src="https://ecommerce-ui.com/images/payment-icons/american-express.svg" height="24" alt="american-express">
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://unpkg.com/finalcss@1.2.1/dist/final.min.js"></script>
 </body>
 </html>
