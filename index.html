@@ -613,7 +613,157 @@
             }
 
             /* ---------New trending-------- */
+            .my-5 {
+                margin: 20px 0
+            }
+            .container {
+                max-width: 1280px;
+                width: 100%;
+                padding: 0 20px
+                margin: 0 auto;
+            }
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+                    /*-----------Main banner-----------------*/
+            .banner-main {
+                flex: 2;
+                min-height: 0;
+                margin-left: 80px;
+            }
+            .banner-large {
+                position: relative;
+                border-radius: 8px;
+                overflow: hidden;
+                background-color: var(--blue-100);
+                height: 360px;
+            }
+            .banner-large img.banner-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+            .banner-content {
+                position: absolute;
+                top: 20%;
+                left: 40px;
+                text-align: center;
+                color: black;
+            }
+            .banner-content h2 {
+                font-family: var(--font-family);
+                font-size: 2.8rem;
+                font-weight: 500;
+                margin-bottom: 4px;
+            }
+            .banner-content p {
+                font-size: 1.12rem;
+                margin-bottom: 20px;
+                color: var(--blue-400);
+            }
+            .button-main {
+                display: inline-flex;
+                align-items: center;
+                padding: 12px 20px;
+                background-color: var(--blue-300);
+                color: #fff;
+                text-decoration: none;
+                border-radius: 999px;
+                font-size: 1rem;
+                font-weight: 600;
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
 
+            .button-main:hover {
+                background-color: var(--blue-700);
+                color: #fff;
+                transform: scale(-5px);
+            }
+
+
+
+                    /*-----------Main banner-----------------*/
+                .banner-small {
+                    flex: 1;
+                    min-width: 0;
+                    margin-right: 80px;
+                }
+                .banner-small-inner {
+                    position: relative;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    height: 100%;
+                }
+                .img-bg {
+                    position: absolute;
+                    top: 0; left: 0;
+                    width: 100%; height: 100%;
+                    object-fit: cover;
+                    z-index: 0;
+                }
+                .caption {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0; right: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: center;
+                    text-align: center;
+                    gap: 12px;
+                    padding: 20px;
+                    color: #fff;
+                    z-index: 1;
+                    background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+                }
+                .caption h5 {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                    }
+                .button-outline {
+                    display: inline-block;
+                    align-items: center;
+                    padding: 8px 16px;
+                    border: 1px solid #fff;
+                    border-radius: 999px;
+                    color: #fff;
+                    text-decoration: none;
+                    background: transparent;
+                    transition: all 0.3s ease;
+                }
+                .button-outline:hover {
+                    border-color: #2563eb;
+                    color: #2563eb;
+                    transform: scale(-5px);
+                }
+
+                @media (max-width: 640px) {
+                    .banner-main {
+                        flex: 1 1 100%;
+                    }
+                    .banner-large {
+                        height: 280px;
+                    }
+                    .banner-content {
+                        top: 20%;
+                        left: 20px;
+                        text-align: left;
+                    }
+                    .banner-content h2 {
+                        font-size: 1.8rem;
+                    }
+                    .banner-content p {
+                        font-size: 1rem;
+                    }
+                    .banner-small {
+                        display: none;
+                    }
+                }
             /* ---------Most popular categories-------- */
             .popular-section {
                 padding: 0 20px;
@@ -1009,6 +1159,35 @@
         </section>
 
         <!---------New trending-------->
+        <section class="my-5">
+            <div class="container">
+                <div class="row">
+                <!-- Banner chính -->
+                <main class="banner-main">
+                    <article class="banner-large relative rounded overflow-hidden">
+                    <div class="banner-content">
+                        <h2>New trending <br> Interior decorations</h2>
+                        <p>Hot summer discounts ending soon</p>
+                        <a href="#" class="button-main">Get Deals Now &gt;</a>
+                    </div>
+                    <img src="images/banners/main-interior.png" alt="Main banner" class="banner-img">
+                    </article>
+                </main>
+
+                <!-- Banner nhỏ -->
+                <aside class="banner-small">
+                    <article class="banner-small rounded">
+                    <img src="images/banners/small-interior.png" alt="Small banner" class="img-bg">
+                    <div class="caption">
+                        <h5>Custom interiors</h5>
+                        <a href="#" class="button-outline">Order Now</a>
+                    </div>
+                    </article>
+                </aside>
+                </div>
+            </div>
+            </section>
+
 
         <!---------Most popular categories-------->
         <section class="popular-section" aria-label="Most popular categories">
