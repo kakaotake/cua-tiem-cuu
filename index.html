@@ -603,7 +603,7 @@
             }
             .popular-grid {
                 display: grid;
-                grid-template-columns: repeat(5, 180px);
+                grid-template-columns: repeat(5, 210px);
                 gap: 12px;
                 justify-content: center;
             }
@@ -652,7 +652,7 @@
             }
             .deals-grid {
                 display: grid;
-                grid-template-columns: repeat(5, 180px);
+                grid-template-columns: repeat(5, 210px);
                 gap: 16px;
                 justify-content: center;
             }
@@ -739,7 +739,7 @@
             /*--------Show More----------*/
             .show-more {
                 display: block;
-                width: 64%;
+                width: 70%;
                 margin: 20px auto 40px;
                 padding: 12px 0;
                 margin: 20 auto 40px;
@@ -773,7 +773,6 @@
                 display: grid;
                 grid-template-columns: repeat(5, 1fr);
                 gap: 18px;
-                justify-content: center;
             }
             .footer-column h6 {
                 font-weight: 700;
@@ -808,15 +807,23 @@
                 color: black;
             }
 
+            @media (max-width: 1024px) {
+                .popular-grid {
+                    grid-template-columns: repeat(4, 210px);
+                }
+                .deals-grid {
+                    grid-template-columns: repeat(4, 210px);
+                }
+            }
             @media (max-width: 768px) {
                 .footer-grid {
                     grid-template-columns: repeat(4, 1fr);
                 }
                 .popular-grid {
-                    grid-template-columns: repeat(4, 180px);
+                    grid-template-columns: repeat(3, 210px);
                 }
                 .deals-grid {
-                    grid-template-columns: repeat(4, 180px);
+                    grid-template-columns: repeat(3, 210px);
                 }
             }
 
@@ -825,10 +832,10 @@
                     grid-template-columns: repeat(3, 1fr);
                 }
                 .popular-grid {
-                    grid-template-columns: repeat(2, 180px);
+                    grid-template-columns: repeat(2, 210px);
                 }
                 .deals-grid {
-                    grid-template-columns: repeat(2, 180px);
+                    grid-template-columns: repeat(2, 210px);
                 }
             }
 
