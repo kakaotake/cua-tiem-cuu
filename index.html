@@ -365,21 +365,6 @@
                 color: white;
             }
 
-            @media (max-width: 768px) {
-                .catalog-button { order: 1; }
-                .brand          { order: 2; }
-                .sign-in-button { order: 3; }
-                .icon-group     { order: 4; }
-                .search-form {
-                    order: 5;
-                    flex: 1 1 90%;
-                }
-
-                .catalog-text {
-                    display: none;
-                }
-            }
-
             /*-----Sign in-----*/
             .sign-in-button {
                 display: inline-block;
@@ -455,6 +440,25 @@
                 outline-offset: 3px;
             }
 
+            @media (max-width: 768px) {
+                .header-left { order: 1; }
+                .header-right { order: 2; }
+                .header-center {
+                    order: 3;
+                    flex: 1 1 90%;
+                }
+
+                .header-left .catalog-button {
+                    order: 0;
+                }
+                .header-left .brand {
+                    order: 1;
+                }
+
+                .catalog-text {
+                    display: none;
+                }
+            }
             /* ---------Navigation Bar-------- */
             .extra-nav {
                 background-color: transparent;
@@ -547,7 +551,6 @@
                     display: inline-block;
                 }
             }
-            /* ---------New trending-------- */
 
             /* ---------Product Catalog-------- */
             .catalog-circles {
@@ -587,6 +590,8 @@
                 font-size: 0.95rem;
                 color: black;
             }
+
+            /* ---------New trending-------- */
 
             /* ---------Most popular categories-------- */
             .popular-section {
@@ -939,8 +944,6 @@
         </nav>
         <hr>
 
-        <!---------New trending-------->
-
         <!---------Product Catalog-------->
         <section class="catalog-circles" aria-label="Product categories">
             <header class="popular-header" style="text-align: center; margin-bottom: 25px;">
@@ -983,6 +986,8 @@
                 </a>
             </div>
         </section>
+
+        <!---------New trending-------->
 
         <!---------Most popular categories-------->
         <section class="popular-section" aria-label="Most popular categories">
