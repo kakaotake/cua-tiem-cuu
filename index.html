@@ -995,16 +995,24 @@
                 color: black;
             }
 
+            @media (max-width: 1264px) {
+                .popular-grid {
+                    grid-template-columns: repeat(4, minmax(150px, 1fr));
+                }
+                .deals-grid {
+                    grid-template-columns: repeat(4, minmax(150px, 1fr));
+                }
+            }
             
             @media (max-width: 768px) {
                 .footer-grid {
                     grid-template-columns: repeat(4, 1fr);
                 }
                 .popular-grid {
-                    grid-template-columns: repeat(4, minmax(150px, 1fr));
+                    grid-template-columns: repeat(3, minmax(150px, 1fr));
                 }
                 .deals-grid {
-                    grid-template-columns: repeat(4, minmax(150px, 1fr));
+                    grid-template-columns: repeat(3, minmax(150px, 1fr));
                 }
             }
 
@@ -1013,10 +1021,10 @@
                     grid-template-columns: repeat(3, 1fr);
                 }
                 .popular-grid {
-                    grid-template-columns: repeat(3, minmax(150px, 1fr));
+                    grid-template-columns: repeat(2, minmax(150px, 1fr));
                 }
                 .deals-grid {
-                    grid-template-columns: repeat(3, minmax(150px, 1fr));
+                    grid-template-columns: repeat(2, minmax(150px, 1fr));
                 }
             }
 
@@ -1486,6 +1494,7 @@
             </div>
             </footer>
     </body>
+
 
 
 
