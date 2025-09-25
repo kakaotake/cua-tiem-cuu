@@ -627,12 +627,12 @@
             }
 
             /* ---------New trending-------- */
-            .my-5 {
+            .new-trending {
                 margin: 20px 0
             }
             .container {
                 max-width: 1264px;
-                width: 83%;
+                width: 100%;
                 margin: 0 auto;
             }
             .row {
@@ -955,6 +955,118 @@
             }
 
             /* ---------Video Reviews-------- */
+            .video-section {
+                margin: 20px 0;
+            }
+            
+            .container {
+                max-width: 1264px;
+                width: 100%;
+                margin: 20px auto;
+            }
+            
+            .video-grid {
+                display: grid;
+                gap: 16px;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+            
+            @media (min-width: 640px) {
+                .video-grid {
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                }
+            }
+            
+            @media (min-width: 920px) {
+                .video-grid {
+                    grid-template-columns: repeat(4, minmax(0, 1fr));
+                }
+            }
+            
+            .editors-pick-container {
+                grid-column: 1 / -1;
+            }
+            
+            .card {
+                border-radius: var(--border-radius-base);
+                background-color: #fff;
+                overflow: hidden;
+            }
+            
+            .editors-pick-card {
+                background-color: var(--blue-300);
+                padding: 8px;
+                height: 100%;
+            }
+            
+            .card-body {
+                padding: 24px;
+            }
+            
+            .card-title {
+                font-size: 1.5rem;
+                margin-bottom: 8px;
+            }
+            
+            .card-description {
+                margin-bottom: 16px;
+            }
+            
+            .button {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 8px 12px;
+                border: 1px solid var(--blue-100);
+                background-color: var(--blue-100);
+                color: var(--blue-800);
+                text-decoration: none;
+                cursor: pointer;
+                border-radius: var(--border-radius-base);
+            }
+            
+            .video-thumbnail-card {
+                background-color: var(--neutral-200);
+                border: 1px solid var(--neutral-200);
+                border-radius: 8px;
+                position: relative;
+                aspect-ratio: 1 / 1;
+                overflow: hidden;
+            }
+            
+            .video-link {
+                display: block;
+                height: 100%;
+            }
+            
+            .video-link:hover {
+                opacity: 0.8;
+            }
+            
+            .video-thumbnail {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            
+            .play-button {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                width: 40px;
+                height: 40px;
+                border-radius: 10px;
+                font-size: 1.12rem;
+                background-color: var(--blue-100);
+                color: var(--blue-600);
+                border: 1px solid var(--blue-100);
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+                cursor: pointer;
+            }
+            
+            .play-button svg path {
+                fill: var(--blue-600);
+            }
 
             /* ---------Footer-------- */
             .site-footer {
@@ -1190,7 +1302,7 @@
         </section>
 
         <!---------New trending-------->
-        <section class="my-5">
+        <section class="new-trending">
             <div class="container">
                 <div class="row">
                 <!-- Banner chính -->
@@ -1434,6 +1546,99 @@
 
 
         <!---------Video Reviews-------->
+        <section class="video-section">
+            <div class="container">
+                <div class="video-grid">
+                    <!-- Editors' Picks -->
+                    <div class="editors-pick-container">
+                        <article class="card editors-pick-card">
+                            <div class="card-body">
+                                <p class="card-text-primary">Editors’ Picks</p>
+                                <h3 class="card-title">Video Reviews</h3>
+                                <p class="card-description">
+                                    Want to add that personal touch? These sellers specialize in embroidery, engraving, illustrating, and more.
+                                </p>
+                                <a href="#" class="button">Shop these findings</a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <!-- Video Cards -->
+                    <div>
+                        <article class="video-thumbnail-card">
+                            <a href="#" class="video-link">
+                                <img src="images/product-interior/review-1.png" class="video-thumbnail" alt="">
+                                <button class="play-button">
+                                    <svg width="15" height="20" viewBox="0 0 15 20">
+                                        <path d="M0 0V20L15 10L0 0Z" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </article>
+                    </div>
+                    <div>
+                        <article class="video-thumbnail-card">
+                            <a href="#" class="video-link">
+                                <img src="images/product-interior/review-2.png" class="video-thumbnail" alt="">
+                                <button class="play-button">
+                                    <svg width="15" height="20" viewBox="0 0 15 20">
+                                        <path d="M0 0V20L15 10L0 0Z" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+                <div>
+                    <article class="video-thumbnail-card">
+                        <a href="#" class="video-link">
+                            <img src="images/product-interior/review-3.png" class="video-thumbnail" alt="">
+                            <button class="play-button">
+                                <svg width="15" height="20" viewBox="0 0 15 20">
+                                    <path d="M0 0V20L15 10L0 0Z" />
+                                </svg>
+                            </button>
+                        </a>
+                    </article>
+                </div>
+                <div>
+                    <article class="video-thumbnail-card">
+                        <a href="#" class="video-link">
+                            <img src="images/product-interior/review-4.png" class="video-thumbnail" alt="">
+                            <button class="play-button">
+                                <svg width="15" height="20" viewBox="0 0 15 20">
+                                    <path d="M0 0V20L15 10L0 0Z" />
+                                </svg>
+                            </button>
+                        </a>
+                    </article>
+                </div>
+                <div>
+                    <article class="video-thumbnail-card">
+                        <a href="#" class="video-link">
+                            <img src="images/product-interior/review-5.png" class="video-thumbnail" alt="">
+                            <button class="play-button">
+                                <svg width="15" height="20" viewBox="0 0 15 20">
+                                    <path d="M0 0V20L15 10L0 0Z" />
+                                </svg>
+                            </button>
+                        </a>
+                    </article>
+                </div>
+                <div>
+                    <article class="video-thumbnail-card">
+                        <a href="#" class="video-link">
+                            <img src="images/product-interior/review-6.png" class="video-thumbnail" alt="">
+                            <button class="play-button">
+                                <svg width="15" height="20" viewBox="0 0 15 20">
+                                    <path d="M0 0V20L15 10L0 0Z" />
+                                </svg>
+                            </button>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
 
         <!---------Footer-------->
         <footer class="site-footer" role="contentinfo">
@@ -1500,6 +1705,7 @@
             </div>
             </footer>
     </body>
+
 
 
 
