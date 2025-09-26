@@ -577,7 +577,7 @@ hr {
     height: 120px;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid var(--neutral-400);
+    border: 4px solid var(--neutral-300);
     background-color: var(--neutral-600);
     transition: border-color 0.2s, transform 0.2s;
 }
@@ -816,7 +816,7 @@ hr {
 .product-card {
     position: relative;
     background: #fff;
-    border: 2px solid var(--neutral-400);
+    border: 2px solid var(--neutral-300);
     border-radius: 10px;
     overflow: hidden;
     padding-bottom: 10px;
@@ -946,7 +946,7 @@ hr {
     overflow: hidden;
 }
 .card--editors-pick {
-    background-color: var(--blue-300);
+    background-color: var(--blue-200);
     padding: 8px;
     height: 100%;
 }
@@ -965,7 +965,6 @@ hr {
     align-items: center;
     justify-content: center;
     padding: 8px 12px;
-    border: 1px solid var(--blue-100);
     background-color: var(--blue-100);
     color: var(--blue-800);
     text-decoration: none;
@@ -1024,6 +1023,7 @@ hr {
     padding: 28px 20px;
     color: black;
     font-family: var(--font-family);
+    margin: 0 auto;
 }
 .footer__grid {
     display: grid;
