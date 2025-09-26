@@ -253,7 +253,8 @@ hr {
     align-items: center;
     gap: 8px;
     color: black;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 400;
     font-family: var(--font-family);
     box-sizing: border-box;
     height: 42px;
