@@ -130,9 +130,10 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10px 0;
+    padding: 10px 20px;
     width: 100%;
     max-width: 1264px;
+    margin: 0 auto;
 }
 .header__left {
     display: flex;
