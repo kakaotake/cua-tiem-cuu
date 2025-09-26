@@ -507,7 +507,7 @@ hr {
 }
 .nav__menu-icon {
     display: none;
-    font-size: 22px;
+    font-size: 16px;
     cursor: pointer;
     padding: 12px;
     background: var(--blue-200);
@@ -551,6 +551,7 @@ hr {
 
     .nav__menu-icon {
         display: block;
+        margin: 0 auto;
         width: 90%;
     }
 }
@@ -608,7 +609,7 @@ hr {
 }
 .banner__container {
     max-width: 1264px;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 .banner__row {
@@ -754,6 +755,7 @@ hr {
     background-color: #fff;
     font-family: var(--font-family);
     max-width: 1264px;
+    width: 90%;
     margin: 0 auto;
 }
 .popular__title {
@@ -804,6 +806,7 @@ hr {
     background-color: #fff;
     font-family: var(--font-family);
     max-width: 1264px;
+    width: 90%;
     margin: 0 auto;
 }
 .deals__title {
@@ -900,7 +903,7 @@ hr {
 /* Show More Button */
 .show-more {
     display: block;
-    width: 100%;
+    width: 90%;
     max-width: 1264px;
     margin: 20px auto 40px;
     padding: 12px 0;
@@ -925,7 +928,7 @@ hr {
 }
 .video-reviews__container {
     max-width: 1264px;
-    width: 100%;
+    width: 90%;
     margin: 20px auto;
 }
 .video-reviews__grid {
