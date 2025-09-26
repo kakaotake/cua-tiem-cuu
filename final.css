@@ -511,9 +511,20 @@ hr {
     display: none;
     font-size: 28px;
     cursor: pointer;
-    padding: 8px;
+    padding: 12px;
     background: var(--blue-200);
     border-radius: 6px;
+    border: none;
+    color: black;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+.nav__menu-icon:hover {
+    background: var(--blue-600);
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 @media (max-width: 768px) {
@@ -541,7 +552,8 @@ hr {
     }
 
     .nav__menu-icon {
-        display: inline-block;
+        display: block;
+        width: 100%;
     }
 }
 
