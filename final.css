@@ -1023,7 +1023,10 @@ hr {
     padding: 28px 20px;
     color: black;
     font-family: var(--font-family);
+}
+.footer__container {
     margin: 0 auto;
+    max-width: 1264px;
 }
 .footer__grid {
     display: grid;
