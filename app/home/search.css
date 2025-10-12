@@ -132,19 +132,23 @@
             display: flex;
             gap: 8px;
             margin-bottom: 12px;
+            width: 100%;
         }
 
         .sidebar__input {
             flex: 1;
+            min-width: 0;
             padding: 8px;
             border: 1px solid var(--neutral-300);
             border-radius: 4px;
             font-size: 0.875rem;
+            box-sizing: border-box;
         }
 
         .sidebar__slider {
             width: 100%;
             margin-bottom: 12px;
+            box-sizing: border-box;
         }
 
         .sidebar__button {
@@ -345,7 +349,6 @@
             background-color: var(--blue-600);
             color: white;
         }
-
         @media (max-width: 1024px) {
             .products-section {
                 flex-direction: column;
@@ -358,6 +361,71 @@
             .product-grid {
                 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             }
+        }
+
+        /* Pagination Block */
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 32px;
+            padding: 20px 0;
+        }
+
+        .pagination__back {
+            padding: 10px 20px;
+            background-color: #fff;
+            border: 1px solid var(--neutral-300);
+            border-radius: 6px;
+            font-size: 0.95rem;
+            color: #374151;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .pagination__back:hover {
+            border-color: var(--blue-600);
+            color: var(--blue-600);
+        }
+
+        .pagination__numbers {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .pagination__button {
+            min-width: 44px;
+            height: 44px;
+            padding: 10px 14px;
+            background-color: #fff;
+            border: 1px solid var(--neutral-300);
+            border-radius: 6px;
+            font-size: 0.95rem;
+            color: #374151;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pagination__button:hover {
+            border-color: var(--blue-600);
+            background-color: var(--blue-600);
+            color: white;
+        }
+
+        .pagination__button--active {
+            background-color: var(--neutral-300);
+            border-color: var(--neutral-300);
+            font-weight: 600;
+        }
+
+        .pagination__button--active:hover {
+            background-color: var(--blue-600);
+            border-color: var(--blue-600);
+            color: white;
         }
 
         @media (max-width: 640px) {
@@ -377,5 +445,16 @@
             .product-grid {
                 grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
                 gap: 12px;
+            }
+
+            .pagination {
+                flex-wrap: wrap;
+                gap: 12px;
+                justify-content: center;
+            }
+
+            .pagination__back {
+                order: -1;
+                width: 100%;
             }
         }
