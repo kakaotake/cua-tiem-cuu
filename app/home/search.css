@@ -111,13 +111,17 @@
         }
 
         .sidebar__checkbox {
-            margin-right: 8px;
+            margin: 0;
+            cursor: pointer;  
         }
 
         .sidebar__label {
             font-size: 0.875rem;
             color: #374151;
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .sidebar__label:hover {
