@@ -368,10 +368,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 32px;
             padding: 20px 0;
             max-width: 1264px;
             width: 90%;
+            margin: 0 auto;
         }
 
         .pagination__back {
