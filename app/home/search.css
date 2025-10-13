@@ -128,10 +128,6 @@
             color: var(--blue-600);
         }
 
-        .sidebar__radio {
-            margin-right: 8px;
-        }
-
         .sidebar__price-inputs {
             display: flex;
             gap: 8px;
