@@ -286,7 +286,7 @@
 
         .product-card__wishlist:hover {
             transform: scale(1.1);
-            color: #ef4444;
+            color: var(--blue-600);
         }
 
         .product-card__info {
